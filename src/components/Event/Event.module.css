@@ -1,0 +1,45 @@
+.container {
+    min-height: 322;
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    padding-right: 5%;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerText {
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;    
+    padding-left: 18.95rem;
+    padding-right:18.95rem ;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerText h2 {
+    color: var(--titleColor2);
+    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    line-height: 61px;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.containerText p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    color: #CCCCCC;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}

@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Dosis, Roboto_Condensed, Bebas_Neue } from 'next/font/google'
+import { Roboto_Condensed } from 'next/font/google'
 import Navbar from '../components/Navbar/Navbar'
 
 const roboto = Roboto_Condensed({ subsets: ['latin'],  weight: ["300", "400", "700"] })
@@ -10,11 +10,13 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={roboto.className}>
         <Navbar />
-        {children}
+          {children}
+        <Navbar logoVisible={true} logoFooter={true} color={true} />
         </body>
     </html>
   )

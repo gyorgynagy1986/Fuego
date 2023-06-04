@@ -3,10 +3,10 @@
     height: 100%;
     display: flex;
     justify-content: left;
-align-items: center;
+    align-items: center;
     min-height: 500px;
     background-image: linear-gradient(90deg, #181818 41.15%, rgba(24, 24, 24, 0) 69.23%, rgba(24, 24, 24, 0) 100%),
-    url('/hero.png');
+    url('/map.png');
     background-size: cover;
     background-position: center;
 }
@@ -14,19 +14,14 @@ align-items: center;
 
 .textContainer {
     position: relative;
-    max-width: 37%;
+    min-width: 40%;
     padding-top: 8rem;
     padding-bottom: 8rem;
     padding-left: 8.5rem;
 
 }
 
-.logo {
-position: absolute;
-top:-8rem
-}
-
-.textContainer h1 {
+.textContainer h3 {
     color: var(--titleColor);
     font-size: 48px;
     letter-spacing: 0.02em;
@@ -35,14 +30,30 @@ top:-8rem
     margin-bottom: 2rem;
 }
 
-.textContainer p {
-    font-size: 20px;
-    line-height: 30px;
-
-    margin-bottom: 4rem;
-}
 
 .btnContainer button:nth-child(1) {
     margin-right: 5rem;
+}
 
+.textBoxContainer  {
+   max-width: 45rem;
+}
+
+.textBoxContainer div {
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+}
+
+.textBoxContainer div:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.textBoxContainer div:nth-child(3) {
+    margin-bottom: 3rem;
+}
+
+.textBoxContainer div {
+    display: flex;
+    justify-content: space-between;
 }

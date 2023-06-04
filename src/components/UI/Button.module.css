@@ -9,3 +9,17 @@
     border: none;
     border-radius: 10px;
 }
+
+.buttonGetInTouch {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: var(--navTextColor);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.butnBlue {
+    background: var(--btn2Color) !important;
+}

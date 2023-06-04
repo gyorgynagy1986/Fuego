@@ -2,14 +2,13 @@
   --bcColor:#181818;
   --mainTextColor:#CCCCCC;
   --titleColor:#E4902F;
+  --titleColor2:#00C2FF;
   --navTextColor: #FFFFFF;
 
   --btn1Color: radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   --btn2Color: radial-gradient(66.67% 318.28% at 18.75% 190.82%, #00E4CC 0%, #0083E1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   --btnTextColor: #FFEEEE;
 }
-
-
 
 
 * {
@@ -21,14 +20,14 @@
 html,
 body {
   overflow-x: hidden;
+  font-size: 62.5%; 
+  scroll-behavior: smooth;
 }
 
 body {
  background-color: var(--bcColor);
  color: var(--mainTextColor);
- max-width: 1920px;
  margin-inline:auto;
-
 }
 
 li {
