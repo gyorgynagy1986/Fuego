@@ -1,10 +1,13 @@
+"use client"
 
+import PhotoGallery from "@/components/PhotoGallery/PhotoGallery"
 
 const Gallery = () => {
 
-console.log()
   return (
     <>
+      <h1>gallery</h1>
+      <PhotoGallery />
     </>
   )
 }
