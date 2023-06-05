@@ -43,14 +43,29 @@ a {
 
 
 .logo {
-  position: absolute;
-  top:30px;
-  left: 100px;
+    width: 10%;
+    max-width: 150px;
+    height: 10%;
+    position: absolute;
+    top: -62px;
+    left: 90px;
   }
 
 
   @media only screen and (max-width: 1150px)  {
     .logo {
-      display: none;
-    }
+      width: unset;
+      height: unset;
+      left: 30px;
+      z-index: 99;
+      top: 40px;    }
   }
+
+  
+@media only screen and (max-width: 681px) {
+  .logo {
+    width: 60px;
+    left: 22px;
+    top: 13px;
+  }
+}

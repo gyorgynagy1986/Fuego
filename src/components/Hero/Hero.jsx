@@ -1,9 +1,11 @@
-import React from 'react'
+"use client"
+
+import React, {useRef, useEffect, useState } from 'react'
 import style from './Hero.module.css'
 import { Dosis } from 'next/font/google'
+import StickyNav from '../StickyNav/StickyNav'
 import Button from '../UI/Button'
 import Image from 'next/image'
-import logo from '../../../public/assets/logo/logo_desktop.png'
 import ButtonGetInTouch from '../UI/ButtonGetInTouch'
 
 import HeroCoverPhoto from '../../../public/hero_tablet.png'
@@ -12,19 +14,43 @@ const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
     h1: 'Lorem ipsum dolor sit amet',
-    p: 'Suspendisse in bibendum lorem,Suspendisse in bibendum lorem, ac ullamcorper turpis. Etiam et diamSuspendisse in bibendum lorem, ac ullamcorper turpis. Etiam et diamSuspendisse in bibendum lorem, ac ullamcorper turpis. Etiam et diamSuspendisse in bibendum lorem, ac ullamcorper turpis. Etiam et diam ac ullamcorper turpis. Etiam et diam orci. Phasellus vitae gravida dolor.',
+    p: 'Etiam et diam ac ullamcorper turpis. Etiam et diam orci. Phasellus vitae gravida dolor.',
     btn:'asztalfoglalás',
     btn2: 'kapcsolat'
 }
 
-// <div className={style.tabletPhoto}></div>
-
-
 const Hero = () => {
+
+  const [stickyNav, setStickyNav] = useState(false)
+
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStickyNav(false)
+        } else {
+          setStickyNav(true)
+        }
+      },
+      { rootMargin: '20% 20px 20px 20px' }
+    );
+
+    observer.observe(menuRef.current);
+
+    return () => {
+      observer.unobserve(menuRef.current);
+    };
+  }, []);
+
+
   return (
-    <header className={style.container} >
-        <div className={style.imageContainer}>
+    <header ref={menuRef} className={style.container}>
+        {stickyNav && <StickyNav />}
+         <div className={style.imageContainer}>
         <div className={style.layer}></div>
+        <div className={style.layerTop}></div>
           <Image src={HeroCoverPhoto}/>
         </div>
 

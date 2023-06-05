@@ -3,7 +3,7 @@ import { Roboto_Condensed } from 'next/font/google'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
 import Image from 'next/image'
-import logo from '../../public/assets/logo/logo_desktop.png'
+import logo from '../../public/assets/logo/logo.svg'
 
 const roboto = Roboto_Condensed({ subsets: ['latin'],  weight: ["300", "400", "700"] })
 
@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
       <Image priority className='logo' alt='Fuego étterem logója' src={logo}/>
-        <Navbar ulHide={true} />
+        <Navbar nav={true} />
           {children}
-        <Navbar logoVisible={true} logoFooter={true} color={true} />
+        <Navbar NavFooter={true}  />
         <Footer />
         </body>
     </html>
