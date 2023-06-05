@@ -6,7 +6,7 @@ import Navbar from '../Navbar/Navbar'
 const MobileMenu = ({mobileMenuHeigthPrefix}) => {
   return (
     <div className={`${style.mobileMenu} ${mobileMenuHeigthPrefix && style.mobileMenuHeigthPrefix} `}>
-      <Navbar NavFooter={true} />
+      <Navbar colorMobileMenu={true} NavFooter={true} />
     </div>
   )
 }

@@ -42,7 +42,7 @@ const items = [
     }, 
 ]
 
-const Navbar = ({NavFooter, nav, mobileMenuHeigthPrefix}) => {
+const Navbar = ({NavFooter, nav, mobileMenuHeigthPrefix, colorMobileMenu}) => {
   const pathname = usePathname();
 
   const [mobileMenu, SetMobileMene] = useState(false);
@@ -63,7 +63,7 @@ const Navbar = ({NavFooter, nav, mobileMenuHeigthPrefix}) => {
   return (
     <>
       {mobileMenu && <MobileMenu  mobileMenuHeigthPrefix={mobileMenuHeigthPrefix} />}
-        <nav className={`${style.nav} ${nav && style.navNav} ${NavFooter && style.footerNav}`}>
+        <nav className={`${style.nav} ${nav && style.navNav} ${NavFooter && style.footerNav} ${colorMobileMenu && style.colorMobileMenu}`}>
           {NavFooter && <Link className={`${NavFooter && style.logoFooterMobile}`} href='/'><Image src={logo_footer}/></Link>  }
           <div className={`${style.rightItemsContainer} ${NavFooter && style.ulCenter} ${NavFooter && style.containerUlMobile}`}>
             <ul className={`${style.ul} ${nav && style.ulHide} ${NavFooter && style.ulMobile}` }>

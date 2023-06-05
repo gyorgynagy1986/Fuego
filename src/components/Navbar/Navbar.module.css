@@ -139,6 +139,11 @@
 /*FOOTER NAV IN MOBILE VIEW WHICH IS ALSO THE NAV OF THE MOBILE MENU*/
 
 @media only screen and (max-width: 1150px) {
+
+    .colorMobileMenu {
+        background-color: var(--bgColor);
+    }
+
     .logoFooterMobile {
         margin-bottom: 4rem;
     }

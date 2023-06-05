@@ -60,7 +60,7 @@ a {
       width: unset;
       height: unset;
       left: 4.5rem;
-      z-index: 99;
+      z-index: 99999;
       top: 40px;    }
   }
 

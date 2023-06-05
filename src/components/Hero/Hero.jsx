@@ -48,7 +48,7 @@ const Hero = () => {
          <div className={style.imageContainer}>
         <div className={style.layer}></div>
         <div className={style.layerTop}></div>
-          <Image alt='Fuego' src={HeroCoverPhoto}/>
+          <Image alt='Fuego' priority src={HeroCoverPhoto}/>
         </div>
 
         <div className={style.textContainer}>
