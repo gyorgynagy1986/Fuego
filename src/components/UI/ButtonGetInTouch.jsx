@@ -7,10 +7,10 @@ import {Bebas_Neue } from 'next/font/google'
 const bebas = Bebas_Neue({ subsets: ['latin'], weight: "400" })
 
 
-const ButtonGetInTouch = ({url, name}) => {
+const ButtonGetInTouch = ({url, name, underline}) => {
 
   return (
-    <Link href={url}><button className={`${style.buttonGetInTouch} ${bebas.className}`}>{name}</button></Link>
+    <Link href={url}><button className={`${style.buttonGetInTouch} ${underline && style.underline} ${bebas.className}`}>{name}</button></Link>
     )
 }
 

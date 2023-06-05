@@ -7,7 +7,6 @@ const Gallery = () => {
   return (
     <>
       <h1>gallery</h1>
-      <PhotoGallery />
     </>
   )
 }

@@ -37,16 +37,14 @@ const items = [
     }, 
 ]
 
-const Navbar = ({color, logoFooter, logoVisible}) => {
+const Navbar = ({color, logoFooter, logoVisible, ulHide}) => {
   const pathname = usePathname();
 
-  console.log(logoFooter, logoVisible)
-    
   return (
-        <nav className={`${style.nav} ${color && style.footerNav} ${logoFooter && style.spaceBetween}`}>
-       {logoVisible && <Link href='/'><Image  src={logo_footer}/></Link>  }
-        <div className={style.rightItemsContainer}>
-        <ul className={style.ul}>
+        <nav className={`${style.nav} ${color && style.footerNav} ${logoFooter && style.spaceBetween} ${logoFooter && style.tabletPositon}`}>
+        {logoVisible && <Link  href='/'><Image src={logo_footer}/></Link>  }
+        <div className={`${style.rightItemsContainer} ${logoVisible && style.ulCenter}`}>
+        <ul className={`${style.ul} ${ulHide && style.ulHide}` }>
           {items.map((item) => (
             <li key={item.id}>
               <Link
@@ -62,7 +60,7 @@ const Navbar = ({color, logoFooter, logoVisible}) => {
             <Image src={facebook} alt='Fuego facebbok oldala'/>
             <Image src={instagram} alt='Fuego instagram oldala'/>
         </div>
-        <div className={style.lng}>
+        <div className={`${style.lng} ${logoVisible && style.lngHide}`}>
             <span>EN </span>
             <span>/</span>
             <span>HU</span>

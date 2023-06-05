@@ -13,6 +13,7 @@ const textContent = {
 const Story = () => {
   return (
   <div className={style.container}>
+    <div className={style.tabletPhoto}></div>
     <div className={style.textContainer}>
       <h4 className={dosis.className}>{textContent.h4}</h4>
       <p>{textContent.p}</p>

@@ -23,3 +23,7 @@
 .butnBlue {
     background: var(--btn2Color) !important;
 }
+
+.underline {
+    text-decoration-line: none;
+}

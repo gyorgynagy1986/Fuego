@@ -14,7 +14,8 @@ const textContent = {
 
 const Contact = () => {
   return (
-    <header className={style.container} >
+    <header className={style.container}>
+        <div className={style.tabletPhoto}></div>
         <div className={style.textContainer}>
             <h3 className={dosis.className}>{textContent.h3}</h3>
             <div class={style.textBoxContainer}>

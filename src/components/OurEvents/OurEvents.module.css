@@ -11,13 +11,45 @@
     justify-content: flex-end;
 }
 
+@media only screen and (max-width: 1150px) {
+        .container {
+            background-image:none;
+            height: 100%;
+            flex-direction: column;
+            background-size: none;
+            justify-content: unset;
+            align-items: unset;
+            background-position: none;
+        }
+    }
+
+        @media only screen and (max-width: 1150px) {
+        .tabletPhoto {
+            min-height: 500px;
+            background-image: linear-gradient(180deg, rgba(24, 24, 24, 0) 75.78%, #181818 90.25%), url('/section_1_tablet.png');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+    }
+
 
 .textContainer {
     max-width: 37%;
     padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-bottom: 9rem;
     padding-right: 8.5rem;
 
+}
+
+@media only screen and (max-width: 1150px) {
+    .textContainer {
+      max-width: 100%;
+      padding-top: 0;
+      padding-bottom: 8rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
 }
 
 .textContainer h2 {
@@ -40,3 +72,20 @@
     margin-right: 5rem;
 }
 
+.socialContainer {
+    display: flex;
+}
+
+.socialContainerItem {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.socialContainerItem img {
+     margin-right: 1rem;
+}
+
+.socialContainerItem button:nth-child(1) {
+     margin-right: 4rem;
+}

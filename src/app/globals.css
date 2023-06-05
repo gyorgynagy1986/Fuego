@@ -11,6 +11,7 @@
 }
 
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -28,6 +29,7 @@ body {
  background-color: var(--bcColor);
  color: var(--mainTextColor);
  margin-inline:auto;
+ position: relative;
 }
 
 li {
@@ -40,3 +42,15 @@ a {
 }
 
 
+.logo {
+  position: absolute;
+  top:30px;
+  left: 100px;
+  }
+
+
+  @media only screen and (max-width: 1150px)  {
+    .logo {
+      display: none;
+    }
+  }

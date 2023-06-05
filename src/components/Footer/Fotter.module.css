@@ -1,0 +1,73 @@
+.container {
+    min-height: 25.8rem;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.containerTextleft  {
+    width: 100%;
+}
+
+
+.containerTextP {
+    max-width: 425px;
+}
+
+.containerTextleft button {
+   margin-bottom: .5rem;
+}
+
+.containerTextleftP  {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    color: #FFF4E5;
+    margin-bottom: .5rem;
+}
+
+.containerTextleftReserved {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    color: #FFF4E5;
+    margin-top: 21.5px;
+}
+
+.containerTextleftReserved span {
+    margin-right: 1rem;
+}
+
+.containerTextleftCookie {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    color: #FFF4E5;
+    margin-top: 21.5px;
+}
+
+
+.containerTextleft a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--titleColor);
+    text-decoration-line: underline;
+    margin-bottom: 2.5rem;
+}
+
+.containerCookie {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

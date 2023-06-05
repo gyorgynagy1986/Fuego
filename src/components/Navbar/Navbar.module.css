@@ -34,6 +34,32 @@
     align-items: center;
 }
 
+
+@media only screen and (max-width: 1150px) {
+    .ulHide {
+        display: none;  
+    }
+
+    .ulCenter {
+        width: 100%;
+    }
+
+    .logoIntabletFotterDisplayNone {
+        display: none;    
+    }
+
+    .tabletPositon {
+        height: 25rem;
+        justify-content: space-evenly !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lngHide {
+        display: none;  
+    }
+}
+
 .ul li {
     margin-right: 4rem;
     font-weight: 300;

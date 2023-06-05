@@ -11,6 +11,28 @@
     background-position: center;
 }
 
+@media only screen and (max-width: 1150px) {
+    .container {
+        background-image:none;
+        height: 100%;
+        min-height: 100%;
+        flex-direction: column;
+        background-size: none;
+        justify-content: center;
+        align-items: unset;
+        background-position: none;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .tabletPhoto {
+        min-height: 500px;
+        background-image: linear-gradient(180deg, rgba(24, 24, 24, 0) 75.78%, #181818 90.25%), url('/map_tablet.png');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
 
 .textContainer {
     position: relative;
@@ -19,6 +41,21 @@
     padding-bottom: 8rem;
     padding-left: 8.5rem;
 
+}
+
+@media only screen and (max-width: 1150px) {
+    .textContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 0;
+    padding-bottom: 10rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    }
 }
 
 .textContainer h3 {
@@ -37,6 +74,13 @@
 
 .textBoxContainer  {
    max-width: 45rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    .textBoxContainer {
+        max-width: 35rem;
+        width: 100%;
+    }
 }
 
 .textBoxContainer div {

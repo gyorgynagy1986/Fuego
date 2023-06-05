@@ -11,8 +11,8 @@ const Menu = () => {
     <>
       <h1 className={`${Style.h1} ${dosis.className}`}>Étlap</h1>
       <div className={Style.container}>
-        <Image  alt="Fuego étterem itallapja" src={itallap}/>
-        <Image  alt="Fuego étterem Étlapja" src={etlap}/>
+        <Image priority  alt="Fuego étterem itallapja" src={itallap}/>
+        <Image priority alt="Fuego étterem Étlapja" src={etlap}/>
       </div>
     </>
   )
