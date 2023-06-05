@@ -34,14 +34,11 @@ const Hero = () => {
           setStickyNav(true)
         }
       },
-      { rootMargin: '20% 20px 20px 20px' }
+      { rootMargin: '0px 20px 20px 20px' }
     );
 
     observer.observe(menuRef.current);
 
-    return () => {
-      observer.unobserve(menuRef.current);
-    };
   }, []);
 
 
@@ -51,7 +48,7 @@ const Hero = () => {
          <div className={style.imageContainer}>
         <div className={style.layer}></div>
         <div className={style.layerTop}></div>
-          <Image src={HeroCoverPhoto}/>
+          <Image alt='Fuego' src={HeroCoverPhoto}/>
         </div>
 
         <div className={style.textContainer}>

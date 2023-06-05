@@ -3,14 +3,41 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background: red;
+    background: #181818;
     z-index: 999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .opacity {
     -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+.logo {
+  position: absolute;
+  width: 60px;
+  top: 0;
+  left: 8.5rem;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 1150px) {
+  .logo {
+    left: 4.5rem;
+  }
+ }
+
+
+
+@media only screen and (max-width: 681px) {
+  .logo {
+    left: 20px;
+  }
+
+}
+
 
 
 /* ----------------------------------------------

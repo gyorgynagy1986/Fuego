@@ -18,6 +18,10 @@
   margin: 0;
 }
 
+.overflow-hidden {
+overflow: hidden !important;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -41,14 +45,13 @@ a {
   text-decoration: none;
 }
 
-
 .logo {
     width: 10%;
     max-width: 150px;
     height: 10%;
     position: absolute;
     top: -62px;
-    left: 90px;
+    left: 8.5rem;
   }
 
 
@@ -56,7 +59,7 @@ a {
     .logo {
       width: unset;
       height: unset;
-      left: 30px;
+      left: 4.5rem;
       z-index: 99;
       top: 40px;    }
   }

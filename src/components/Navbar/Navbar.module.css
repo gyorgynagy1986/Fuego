@@ -5,12 +5,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-.spaceBetween {
-    justify-content: space-between !important;
+    padding-right: 8.5rem;
+    padding-left: 8.5rem;
 }
 
 .rightItemsContainer {
@@ -21,6 +17,7 @@
 
 .footerNav {
     background-color: #222222;
+    justify-content: space-between !important;
 }
 
 .active {
@@ -79,6 +76,12 @@
 
 
 @media only screen and (max-width: 1150px) {
+
+    .nav {
+        padding-right: 4.5rem;
+        padding-left: 4.5rem;
+    }
+
     .ulHide {
         display: none;  
     }
@@ -112,6 +115,8 @@
 
 
 @media only screen and (max-width: 681px) {
+
+
     .socialNav {
         display: none;
     }
@@ -127,13 +132,47 @@
     .navNav {
         height: 8rem;
     }
-    
+
 }
 
-.mobileMenu {
-    position: fixed;
-    z-index: 9999;
-    width: 100vw;
-    height: 100vh;
-    background: red;
+
+/*FOOTER NAV IN MOBILE VIEW WHICH IS ALSO THE NAV OF THE MOBILE MENU*/
+
+@media only screen and (max-width: 1150px) {
+    .logoFooterMobile {
+        margin-bottom: 4rem;
+    }
+    .socialNavFooter img {
+        margin: 0 !important;
+    }
+   
+    .socialNavFooter {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .containerUlMobile {
+        flex-direction: column;
+       }
+
+    .footerNav {
+        height: 569px;
+        flex-direction: column;
+        margin: 0;
+        justify-content:center !important;
+        align-items:center;
+     }
+
+     .ulMobile li {
+        margin: 0px 0px 30px 0px !important;
+
+    }
+
+    .ulMobile {
+        flex-direction: column;
+        margin: 0;
+    }
+    
 }
