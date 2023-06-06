@@ -51,28 +51,20 @@ const Navbar = ({NavFooter, nav, mobileMenuHeigthPrefix, colorMobileMenu}) => {
     SetMobileMene(prevmobileMenu => !prevmobileMenu )
   }
 
-  useEffect(() => {
-    if (mobileMenu) {
-      document.documentElement.classList.add('overflow-hidden');
-    } else {
-      document.documentElement.classList.remove('overflow-hidden');
-    }
-  }, [mobileMenu]);
 
 
   return (
     <>
-      {mobileMenu && <MobileMenu  mobileMenuHeigthPrefix={mobileMenuHeigthPrefix} />}
+      {mobileMenu ? <MobileMenu mobileMenuHeigthPrefix={mobileMenuHeigthPrefix}/> : '' }
         <nav className={`${style.nav} ${nav && style.navNav} ${NavFooter && style.footerNav} ${colorMobileMenu && style.colorMobileMenu}`}>
           {NavFooter && <Link className={`${NavFooter && style.logoFooterMobile}`} href='/'><Image src={logo_footer}/></Link>  }
           <div className={`${style.rightItemsContainer} ${NavFooter && style.ulCenter} ${NavFooter && style.containerUlMobile}`}>
             <ul className={`${style.ul} ${nav && style.ulHide} ${NavFooter && style.ulMobile}` }>
               {items.map((item) => (
                 <li key={item.id}>
-                  <Link
-                    className={`${style.link} ${pathname === item.url ? style.active : ''}`}
-                    href={item.url}
-                    >
+                  <Link 
+                      className={`${style.link} ${pathname === item.url ? style.active : ''}`}
+                      href={item.url}>
                     {item.name}
                   </Link>
                 </li>
