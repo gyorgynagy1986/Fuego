@@ -1,14 +1,40 @@
 .container {
     width: 100%;
-    min-height: 500px;
     height: 100%;
-    background-image: linear-gradient(-90deg, #181818 41.15%, rgba(24, 24, 24, 0) 69.23%, rgba(24, 24, 24, 0) 100%),
-    url('/section_1.png');
-    background-size: cover;
-    background-position: center;
-    align-items: center;
     display: flex;
-    justify-content: flex-end;
+    min-height: 500px;
+}
+
+.imageContainer {
+    width: 100%;
+    order: 1;
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-90deg, #181818 8%, rgba(24, 24, 24, 0) 69.23%, rgba(24, 24, 24, 0) 100%);
+    z-index: 2;
+}
+
+.imageContainer img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textContainer {
+    max-width: 37%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-right: 8.5rem;
+    order: 2;
 }
 
 
@@ -17,39 +43,32 @@
         background-image:none;
         height: 100%;
         flex-direction: column;
-        background-size: none;
         justify-content: unset;
         align-items: unset;
-        background-position: none;
     }
-}
 
-@media only screen and (max-width: 1150px) {
-    .tabletPhoto {
-        min-height: 500px;
-        background-image: linear-gradient(180deg, rgba(24, 24, 24, 0) 75.78%, #181818 90.25%), url('/section_1_tablet.png');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
+    .layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(-360deg, #181818 3.15%, rgba(24, 24, 24, 0) 22.23%, rgba(24, 24, 24, 0) 101%);
+        z-index: 2;
     }
-}
 
-.textContainer {
-    max-width: 37%;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    padding-right: 8.5rem;
-
+    .imageContainer img {
+        position: relative;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
     .textContainer {
-      max-width: 100%;
-      padding-top: 0;
-      padding-bottom: 9rem;
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
+        max-width: 100%;
+        padding-top: 0;
+        padding-bottom: 9rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-top: 3rem;
+      }
 }
 
 
@@ -74,3 +93,13 @@
     margin-right: 5rem;
 }
 
+@media only screen and (max-width: 681px) {
+    .imageContainer {
+        min-height: 177px;
+    }
+    
+    .imageContainer img {
+        min-height: 177px;
+    }
+
+}

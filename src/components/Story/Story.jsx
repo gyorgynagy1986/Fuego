@@ -1,6 +1,9 @@
 import style from './Story.module.css'
 import { Dosis } from 'next/font/google'
 import Button from '../UI/Buttons/Button'
+import Image from 'next/image'
+
+import ourStoryCoverPhoto from '../../../public/section_1_tablet.png'
 
 const dosis = Dosis({ subsets: ['latin'] })
 
@@ -13,7 +16,10 @@ const textContent = {
 const Story = () => {
   return (
   <div className={style.container}>
-    <div className={style.tabletPhoto}></div>
+     <div className={style.imageContainer}>
+        <div className={style.layer}></div>
+          <Image alt='Fuego' priority={true} src={ourStoryCoverPhoto}/>
+        </div>
     <div className={style.textContainer}>
       <h4 className={dosis.className}>{textContent.h4}</h4>
       <p>{textContent.p}</p>
