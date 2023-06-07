@@ -109,7 +109,7 @@
         display: block;
         cursor: pointer;
         margin-left: 4rem;
-        z-index: 9999999;
+        z-index: 1;
     }
 }
 

@@ -1,0 +1,82 @@
+.container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px); 
+
+}
+
+.layerToCloseTheGallery {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9989999899;
+}
+
+.containerImage  {
+    border: 4px solid var(--titleColor);
+    height: 80%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    position: relative;
+    z-index: 99899998991;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 50px;
+    position: relative;
+    z-index: 3;
+
+}
+
+@media only screen and (max-width: 1366px)  {
+    .containerImage {
+        height: 90%;
+        width: 80%;
+        padding: 3rem;
+    } 
+
+    .containerImage img {
+        object-fit: contain;
+        
+     }
+}
+
+
+@media only screen and (max-width: 681px) {
+    .containerImage {
+        height: 100%;
+        width: 100%;
+        padding: 0rem;
+    }
+    
+    .containerImage img {
+       object-fit: contain;
+       
+    }
+
+  }

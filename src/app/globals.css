@@ -4,6 +4,7 @@
   --titleColor:#E4902F;
   --titleColor2:#00C2FF;
   --navTextColor: #FFFFFF;
+  --mobileMenuColor:#2D2D2D;
 
   --btn1Color: radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   --btn2Color: radial-gradient(66.67% 318.28% at 18.75% 190.82%, #00E4CC 0%, #0083E1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -44,30 +45,3 @@ a {
   text-decoration: none;
 }
 
-.logo {
-    width: 10%;
-    max-width: 150px;
-    height: 10%;
-    position: absolute;
-    top: -62px;
-    left: 8.5rem;
-  }
-
-
-  @media only screen and (max-width: 1150px)  {
-    .logo {
-      width: unset;
-      height: unset;
-      left: 4.5rem;
-      z-index: 99999;
-      top: 40px;    }
-  }
-
-  
-@media only screen and (max-width: 681px) {
-  .logo {
-    width: 60px;
-    left: 22px;
-    top: 13px;
-  }
-}

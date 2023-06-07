@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Fotter.module.css'
 import Link from 'next/link'
-import Button from '../UI/ButtonGetInTouch'
+import Button from '../UI/Buttons/ButtonGetInTouch'
 
 
 const Footer = () => {

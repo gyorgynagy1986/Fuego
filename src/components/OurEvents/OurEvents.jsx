@@ -2,7 +2,7 @@ import style from './OurEvents.module.css'
 import { Dosis } from 'next/font/google'
 import Image from 'next/image'
 
-import Button from '../UI/ButtonGetInTouch'
+import Button from '../UI/Buttons/ButtonGetInTouch'
 import facebook from '../../../public/assets/social/facebook.svg'
 import instagram from '../../../public/assets/social/instagram.svg'
 

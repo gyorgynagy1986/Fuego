@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './JoinUs.module.css'
-import Button from  '../UI/Button'
+import Button from  '../UI/Buttons/Button'
 import { Dosis } from 'next/font/google'
 
 const dosis = Dosis({ subsets: ['latin'] })

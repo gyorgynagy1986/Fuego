@@ -4,9 +4,9 @@ import React, {useRef, useEffect, useState } from 'react'
 import style from './Hero.module.css'
 import { Dosis } from 'next/font/google'
 import StickyNav from '../StickyNav/StickyNav'
-import Button from '../UI/Button'
+import Button from '../UI/Buttons/Button'
 import Image from 'next/image'
-import ButtonGetInTouch from '../UI/ButtonGetInTouch'
+import ButtonGetInTouch from '../UI/Buttons/ButtonGetInTouch'
 
 import HeroCoverPhoto from '../../../public/hero_tablet.png'
 

@@ -1,6 +1,6 @@
 import style from './Story.module.css'
 import { Dosis } from 'next/font/google'
-import Button from '../UI/Button'
+import Button from '../UI/Buttons/Button'
 
 const dosis = Dosis({ subsets: ['latin'] })
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import style from './Contact.module.css'
 import { Dosis } from 'next/font/google'
-import Button from '../UI/Button'
-import ButtonGetInTouch from '../UI/ButtonGetInTouch'
+import Button from '../UI/Buttons/Button'
+import ButtonGetInTouch from '../UI/Buttons/ButtonGetInTouch'
 
 const dosis = Dosis({ subsets: ['latin'] })
 
