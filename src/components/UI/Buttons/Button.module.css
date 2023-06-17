@@ -1,0 +1,131 @@
+.button  {
+    padding: 10px 20px;
+    background: var(--btn1Color);
+    color: var(--btnTextColor);
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    line-height: auto;
+    text-shadow: 0px 5px 10px rgba(255, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    transition: all .4ms ease-in;
+}
+
+.button::before {
+        content: 'asztalfoglalás';
+        position: absolute;
+        padding: 10px 20px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        border-radius: 10px;
+        background: var(--titleColorHover);
+        opacity: 0;
+        transition: all .1s ease-in-out;
+}
+
+
+.button:hover::before {
+    opacity: 1;
+}
+
+.buttonGetInTouch {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: var(--navTextColor);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.buttonGetInTouch:hover {
+    color: var(--titleColor3Hover)
+
+}
+
+.butnBlue {
+    background: var(--btn2Color) !important;
+}
+
+.butnBlueContact {
+    background: var(--btn2Color) !important;
+}
+
+.butnBlue::before {
+    content: 'étlapunk';
+    position: absolute;
+    padding: 10px 20px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 10px;
+    background: var(--titleColor2Hover) !important;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+}
+
+.butnBlue:hover::before {
+    opacity: 1;
+}
+
+
+
+.butnBlueContact::before {
+    content: 'get in touch';
+    position: absolute;
+    padding: 10px 20px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 10px;
+    background: var(--titleColor2Hover) !important;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+}
+
+.butnBlueContact:hover::before {
+    opacity: 1;
+}
+
+.underline {
+    text-decoration-line: none;
+}
+
+
+.differentTexMainColor  {
+    padding: 10px 20px;
+    background: var(--btn1Color);
+    color: var(--btnTextColor);
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    line-height: auto;
+    border: none;
+    border-radius: 10px;
+    transition: all .4ms ease-in;
+}
+
+.differentTexMainColor::before {
+        content: 'I want to join';
+        position: absolute;
+        padding: 10px 20px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        border-radius: 10px;
+        background: var(--titleColorHover);
+        opacity: 0;
+        transition: all .1s ease-in-out;
+}
+
+
+.differentTexMainColor:hover::before {
+    opacity: 1;
+}
