@@ -6,14 +6,14 @@ import Image from 'next/image';
 import left from '../../../public/assets/icons/left.svg' 
 import right from '../../../public/assets/icons/right.svg' 
 
-import photo from '../../../public/assets/gallery/photos/5.webp'
-import photo1 from '../../../public/assets/gallery/photos/2.webp'
-import photo2 from '../../../public/assets/gallery/photos/3.webp'
-import photo3 from '../../../public/assets/gallery/photos/4.webp'
-import photo4 from '../../../public/assets/gallery/photos/5.webp'
-import photo5 from '../../../public/assets/gallery/photos/6.webp'
-import photo6 from '../../../public/assets/gallery/photos/5.webp'
-import photo7 from '../../../public/assets/gallery/photos/3.webp'
+import photo from '../../../public/assets/gallery/photos/Gallery1.webp'
+import photo1 from '../../../public/assets/gallery/photos/Gallery2.webp'
+import photo2 from '../../../public/assets/gallery/photos/Gallery3.webp'
+import photo3 from '../../../public/assets/gallery/photos/Gallery4.webp'
+import photo4 from '../../../public/assets/gallery/photos/Gallery5.webp'
+import photo5 from '../../../public/assets/gallery/photos/Gallery6.webp'
+import photo6 from '../../../public/assets/gallery/photos/Gallery7.webp'
+import photo7 from '../../../public/assets/gallery/photos/Gallery8.webp'
 
 import galleryCloseIcon from '../../../public/assets/icons/close.svg'
 
