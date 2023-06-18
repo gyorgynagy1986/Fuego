@@ -3,7 +3,7 @@ import { Dosis } from 'next/font/google'
 import Button from '../UI/Buttons/Button'
 import Image from 'next/image'
 
-import ourStoryCoverPhoto from '../../../public/section_1_tablet.png'
+import ourStoryCoverPhoto from '../../../public/assets/sections/Our_story.png'
 
 const dosis = Dosis({ subsets: ['latin'] })
 

@@ -4,14 +4,14 @@ import React from 'react'
 import Image from "next/image"
 import style from './PhotoGallery.module.css'
 
-import photo from '../../../public/assets/gallery/photos/Gallery1.webp'
-import photo1 from '../../../public/assets/gallery/photos/Gallery2.webp'
-import photo2 from '../../../public/assets/gallery/photos/Gallery3.webp'
-import photo3 from '../../../public/assets/gallery/photos/Gallery4.webp'
-import photo4 from '../../../public/assets/gallery/photos/Gallery5.webp'
-import photo5 from '../../../public/assets/gallery/photos/Gallery6.webp'
-import photo6 from '../../../public/assets/gallery/photos/Gallery7.webp'
-import photo7 from '../../../public/assets/gallery/photos/Gallery8.webp'
+import photo from '../../../public/assets/gallery/covers/Gallery1.png'
+import photo1 from '../../../public/assets/gallery/covers/Gallery2.png'
+import photo2 from '../../../public/assets/gallery/covers/Gallery3.png'
+import photo3 from '../../../public/assets/gallery/covers/Gallery4.png'
+import photo4 from '../../../public/assets/gallery/covers/Gallery5.png'
+import photo5 from '../../../public/assets/gallery/covers/Gallery6.png'
+import photo6 from '../../../public/assets/gallery/covers/Gallery7.png'
+import photo7 from '../../../public/assets/gallery/covers/Gallery8.png'
 
 const photoGalleryCoverPhots = [
   { 

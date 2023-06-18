@@ -4,7 +4,7 @@ import style from './Services.module.css'
 import { Dosis, Bebas_Neue } from 'next/font/google'
 import Image from 'next/image'
 
-import HeroCoverPhoto from '../../../public/hero_tablet.png'
+import HeroCoverPhoto from '../../../public/assets/sections/Our_services2.png'
 
 const dosis = Dosis({ subsets: ['latin'] })
 const bebas = Bebas_Neue({ subsets: ['latin'], weight:'400' })
