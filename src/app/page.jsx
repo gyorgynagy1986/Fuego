@@ -15,7 +15,6 @@ export default function Home() {
         <SectionStory />
         <Services />
         <Event />
-        <OurEvents />
         <JoinUs />
         <Contact />
       </main>

@@ -4,19 +4,9 @@ const ContactItems = () => {
   return (
     <>
         <div>
-            <p>Monday - Wednesday</p>
-            <p>17:00 - 23:00</p>
+            <p>Monday - Sunday</p>
+            <p>12:00 - 23:30</p>
          </div>
-
-         <div>
-            <p>Thursday - Saturday</p>
-            <p>17:00 - 03:00</p>
-         </div>
-        
-         <div>
-            <p>Sunday</p>
-            <p>17:00 - 23:00</p>
-        </div>
     </>
   )
 }

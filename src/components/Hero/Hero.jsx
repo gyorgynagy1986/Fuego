@@ -7,10 +7,14 @@ import StickyNav from '../StickyNav/StickyNav'
 import Button from '../UI/Buttons/Button'
 import Image from 'next/image'
 import ButtonGetInTouch from '../UI/Buttons/ButtonGetInTouch'
+import { useParallax } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
+
 
 import HeroCoverPhoto from '../../../public/assets/hero/hero.webp'
 
 const dosis = Dosis({ subsets: ['latin'] })
+
 
 const textContent = {
     h1: 'Lorem ipsum dolor sit amet',
@@ -20,6 +24,12 @@ const textContent = {
 }
 
 const Hero = () => {
+
+  const parallax = useParallax({
+    speed:-5
+  });
+
+
 
   const [stickyNav, setStickyNav] = useState(false)
 
@@ -43,14 +53,14 @@ const Hero = () => {
 
 
   return (
-    <header ref={menuRef} className={style.container}>
+    <header  ref={menuRef} className={style.container}>
         {stickyNav && <StickyNav />}
-         <div className={style.imageContainer}>
+         <div  className={style.imageContainer}>
           <div className={style.layer}></div>
           <div className={style.layerTop}></div>
-          <Image placeholder="blur" alt='Fuego' priority src={HeroCoverPhoto}/>
+        <Image placeholder="blur" alt='Fuego' priority src={HeroCoverPhoto}/>
         </div>
-        <div className={style.textContainer}>
+        <div ref={parallax.ref} className={style.textContainer}>
             <h1 className={dosis.className}>{textContent.h1}</h1>
             <p>{textContent.p}</p>
             <div className={style.btnContainer}>

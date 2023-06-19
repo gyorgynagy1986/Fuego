@@ -61,7 +61,7 @@ const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
             </div>
             <div className={`${nav && style.btnNav}`}><Button url='/' name={textContent.btnName} /></div>
           </div>
-          {nav && <Image width={25}  onClick={mobileMenuHandeler} className={style.hambi} src={mobileMenu ? hambiOpen : hambiClose} alt='hamburger menu'/>}
+          {nav && <Image width={25} onClick={mobileMenuHandeler} className={style.hambi} src={mobileMenu ? hambiOpen : hambiClose} alt='hamburger menu'/>}
         </nav>
     </>
   )

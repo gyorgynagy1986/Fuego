@@ -7,7 +7,7 @@ import Image from 'next/image'
 import ContactItems from './ContactItems'
 
 
-import mapPhoto from '../../../public/map_contact.png' 
+import mapPhoto from '../../../public/assets/sections/map_contact.png' 
 
 const dosis = Dosis({ subsets: ['latin'] })
 
