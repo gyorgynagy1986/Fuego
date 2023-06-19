@@ -17,7 +17,7 @@ const textContent = {
     btn2: 'kapcsolat' 
 }
 
-const Contact = () => {
+const Contact = ({reservation}) => {
   return (
     <section className={style.container}>
         <div className={style.imageContainer}>
@@ -30,7 +30,7 @@ const Contact = () => {
               <ContactItems />
             </div>
             <div className={style.btnContainer}>
-                <Button url={'/'} name={textContent.btn}/>
+                <Button url={reservation} name={textContent.btn}/>
                 <ButtonGetInTouch url={'/kapcsolat'} name={textContent.btn2}/>
             </div>
         </div>

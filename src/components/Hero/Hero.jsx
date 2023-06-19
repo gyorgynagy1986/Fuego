@@ -23,7 +23,7 @@ const textContent = {
     btn2: 'kapcsolat'
 }
 
-const Hero = () => {
+const Hero = ({reservation}) => {
 
   const parallax = useParallax({
     speed:-5
@@ -64,7 +64,7 @@ const Hero = () => {
             <h1 className={dosis.className}>{textContent.h1}</h1>
             <p>{textContent.p}</p>
             <div className={style.btnContainer}>
-                <Button url={'/'} name={textContent.btn}/>
+                <Button url={reservation} name={textContent.btn}/>
                 <ButtonGetInTouch url={'/kapcsolat'} name={textContent.btn2}/>
             </div>
         </div>

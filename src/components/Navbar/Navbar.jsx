@@ -20,6 +20,12 @@ const textContent = {
     btnName:'asztalfoglalás',
 }
 
+const links = {
+  facebook: 'https://www.facebook.com/FUEGOchicken/?locale=hu_HU',
+  instagram: 'https://www.instagram.com/fuegobp/?hl=hu',
+  reservation: 'https://reservours.com/fuego/tablereservation?s=website' 
+}
+
 
 const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
 
@@ -51,15 +57,15 @@ const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
              <NavItems />
             </ul>
             <div className={`${style.social} ${nav && style.socialNav} ${NavFooter && style.socialNavFooter}`}>
-                <Image src={facebook} alt='Fuego facebbok oldala'/>
-                <Image src={instagram} alt='Fuego instagram oldala'/>
+              <Link href={links.facebook}><Image src={facebook} alt='Fuego facebbok oldala'/></Link> 
+              <Link href={links.instagram}><Image src={instagram} alt='Fuego instagram oldala'/></Link> 
             </div>
             <div className={`${style.lng} ${NavFooter && style.lngHide} ${nav && style.lngNav}`}>
                 <span>EN </span>
                 <span>/</span>
                 <span>HU</span>
             </div>
-            <div className={`${nav && style.btnNav}`}><Button url='/' name={textContent.btnName} /></div>
+            <div className={`${nav && style.btnNav}`}><Button url={links.reservation} name={textContent.btnName} /></div>
           </div>
           {nav && <Image width={25} onClick={mobileMenuHandeler} className={style.hambi} src={mobileMenu ? hambiOpen : hambiClose} alt='hamburger menu'/>}
         </nav>

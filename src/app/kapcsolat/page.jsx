@@ -12,7 +12,10 @@ const dosis = Dosis({ subsets: ['latin'] })
 const textContent = {
   h3: 'Restaurante Fuego',
   btn:'asztalfoglalás',
-  btn2: 'kapcsolat' 
+  btn2: 'kapcsolat' ,
+  facebook: 'https://www.facebook.com/FUEGOchicken/?locale=hu_HU',
+  instagram: 'https://www.instagram.com/fuegobp/?hl=hu',
+  reservation: 'https://reservours.com/fuego/tablereservation?s=website' 
 }
 
 const Contact = () => {
@@ -34,14 +37,14 @@ const Contact = () => {
           <div className={style.btnContainer}>
               <div className={style.socialContainerItem}>
                 <Image alt='Fuego étterem facebbok oldala' src={facebook} />
-                <ButtonGetInTouch url={'/'} name={'facebbok'}/>
+                <ButtonGetInTouch url={textContent.facebook} name={'facebook'}/>
               </div>
               <div className={style.socialContainerItem}>
                 <Image alt='Fuego étterem isntagram oldala' src={instagram} />
-                <ButtonGetInTouch url={'/'} name={'instagram'}/>
+                <ButtonGetInTouch url={textContent.instagram} name={'instagram'}/>
               </div>
                 <div className={style.btnContainerItem}>
-                  <Button url={'/'} name={textContent.btn}/>
+                  <Button url={textContent.reservation} name={textContent.btn}/>
                 </div>
           </div>
       </div>  

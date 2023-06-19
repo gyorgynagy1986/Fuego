@@ -9,18 +9,24 @@ import Contact from '@/components/Contact/Contact'
 import Services from '@/components/Services/Services'
 import { ParallaxProvider } from 'react-scroll-parallax';
 
+const links = {
+  facebook: 'https://www.facebook.com/FUEGOchicken/?locale=hu_HU',
+  instagram: 'https://www.instagram.com/fuegobp/?hl=hu',
+  reservation: 'https://reservours.com/fuego/tablereservation?s=website' 
+}
+
 export default function Home() {
 
   return (
     <>
     <ParallaxProvider>
-     <Hero />
+     <Hero reservation={links.reservation} />
       <main>
         <SectionStory />
         <Services />
         <Event />
         <JoinUs />
-        <Contact />
+        <Contact reservation={links.reservation} />
       </main>
       </ParallaxProvider>
     </>
