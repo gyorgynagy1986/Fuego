@@ -47,7 +47,7 @@
         position: absolute;
         bottom: -5px;
         left: 0;
-        height: .5px;
+        height: 1px;
         width: 0%;
         background-color: #F4720A;
         transition: all 160ms ease-in-out;
