@@ -34,7 +34,7 @@ const Contact = ({reservation, lang}) => {
               <ContactItems lang={lang} />
             </div>
             <div className={style.btnContainer}>
-                <Button url={reservation} name={!lang ? textContent.btn : textContentEn.btn }/>
+                <Button engColorPreReserv={lang ? true : false} url={reservation} name={!lang ? textContent.btn : textContentEn.btn }/>
                 <ButtonGetInTouch url={'/kapcsolat'} name={!lang ? textContent.btn2 : textContentEn.btn2 }/>
             </div>
         </div>

@@ -21,14 +21,12 @@
 }
 
 
-
 .ul {
     display: flex;
     height: 100%;
     width: fit-content;
     align-items: center;
 }
-
 
 .ul li {
     margin-right: 4rem;
@@ -73,7 +71,6 @@
     width: 0% !important;
 } 
 
-
 .ul li:nth-child(4) {
    
 }
@@ -105,8 +102,10 @@
     display: none;
 }
 
-
-
+.activeLang {
+    color: var(--titleColor3Hover) !important;
+    cursor:default !important;
+}
 
 @media only screen and (max-width: 1150px) {
 
@@ -143,6 +142,19 @@
         cursor: pointer;
         margin-left: 4rem;
         z-index: 1;
+    }
+
+    .mobilStyle {
+        margin-right: 0;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .mobilStyle span {
+        font-size: 22px;
+        line-height: 21px;
+        color: var(--navTextColor);
+        cursor:pointer;
     }
 }
 

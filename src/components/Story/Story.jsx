@@ -42,7 +42,7 @@ const Story = ({lang}) => {
     <div ref={parallax.ref} className={style.textContainer}>
       <h2 className={dosis.className}>{!lang ? textContent.h4 : textContentEn.h4}</h2>
       <p>{!lang ? textContent.p : textContentEn.p } <br/><br/> {!lang ? textContent.p1 : textContentEn.p1 }</p>
-          <Button btnBlue={true} url={'/etlap'} name={!lang ? textContent.btn : textContentEn.btn}/>
+          <Button engColorPrefixBlue={lang ? true : false } btnBlue={true} url={'/etlap'} name={!lang ? textContent.btn : textContentEn.btn}/>
     </div>
   </div>
   )

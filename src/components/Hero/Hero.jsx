@@ -52,7 +52,6 @@ const Hero = ({reservation, lang}) => {
 
   }, []);
 
-
   return (
     <header  ref={menuRef} className={style.container}>
         {stickyNav && <StickyNav />}
@@ -65,7 +64,7 @@ const Hero = ({reservation, lang}) => {
               <h1 className={dosis.className}>{!lang ? textContent.h1 : textContentEn.h1}</h1>
             <p>{!lang ? textContent.p : textContentEn.p}</p>
             <div className={style.btnContainer}>
-                <Button url={reservation} name={!lang ? textContent.btn : textContentEn.btn}/>
+                <Button engColorPrefix={lang ? true : false} url={reservation} name={!lang ? textContent.btn : textContentEn.btn}/>
                 <ButtonGetInTouch url={'/kapcsolat'} name={!lang ? textContent.btn2 : textContentEn.btn2}/>
             </div>
         </div>

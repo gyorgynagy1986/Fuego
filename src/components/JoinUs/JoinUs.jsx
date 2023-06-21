@@ -35,7 +35,7 @@ const JoinUs = ({lang}) => {
       <div className={style.containerText}>
           <h2 className={dosis.className}>{!lang ? textContent.h2 : textContentEn.h2 }</h2>
             {!lang ? text : textEn}
-          <Button differentTexMainColor={true} name={!lang ? textContent.btn : textContentEn.btn } url={'/kapcsolat'} />
+          <Button engColorPrefixJoin={lang ? true : false} differentTexMainColor={true} name={!lang ? textContent.btn : textContentEn.btn } url={'/kapcsolat'} />
         </div>
       </div>
   )

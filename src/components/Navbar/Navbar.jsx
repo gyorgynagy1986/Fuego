@@ -31,44 +31,66 @@ const links = {
   reservation: 'https://reservours.com/fuego/tablereservation?s=website' 
 }
 
-const Navbar = ({NavFooter, nav, colorMobileMenu, lang}) => {
 
+
+const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
+  
   const [mobileMenu, SetMobileMene] = useState(false);
   const pathname = usePathname()
-
+  
   const mobileMenuHandeler = () => {
     SetMobileMene(prevmobileMenu => !prevmobileMenu )
   }
-
+  
   const mobileClose = () => {
     SetMobileMene(false);
   }
-
-    useEffect(() => {
+  
+  useEffect(() => {
     if (mobileMenu) {
       document.documentElement.classList.add('overflow-hidden');
     } else {
       document.documentElement.classList.remove('overflow-hidden');
     }
   }, [mobileMenu]);
+ 
+ 
+  const navClass = `${style.nav} ${nav && style.navNav} ${NavFooter && style.footerNav} ${colorMobileMenu && style.colorMobileMenu}`;
+  const linkClass = `${NavFooter && style.logoFooterMobile}`;
+  const containerLogic = `${style.rightItemsContainer} ${NavFooter && style.ulCenter} ${NavFooter && style.containerUlMobile}`;
+  const ulLogic = `${style.ul} ${nav && style.ulHide} ${NavFooter && style.ulMobile}` ;
+  const socialLinkContainerLogic = `${style.social} ${nav && style.socialNav} ${NavFooter && style.socialNavFooter}`;
+  const languageLinksLogic = `${style.lng} ${NavFooter && style.lngHide} ${nav && style.lngNav}`;
+  const btnEngLogic = `${pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName }`
+  const btnHoverPrefix = `${pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery'}`
+
+  console.log(btnHoverPrefix, 'hover');
+
 
   return (
     <>
         {mobileMenu && <MobileMenu  mobileClose={mobileClose} /> }
-        <nav className={`${style.nav} ${nav && style.navNav} ${NavFooter && style.footerNav} ${colorMobileMenu && style.colorMobileMenu}`}>
-          {NavFooter && <Link className={`${NavFooter && style.logoFooterMobile}`} href='/'><Image alt='Fuego étterem logója' src={logo_footer}/></Link>  }
-          <div className={`${style.rightItemsContainer} ${NavFooter && style.ulCenter} ${NavFooter && style.containerUlMobile}`}>
-            <ul className={`${style.ul} ${nav && style.ulHide} ${NavFooter && style.ulMobile}` }>
+        
+          <nav className={navClass}>
+        
+          {NavFooter && <Link className={linkClass} href='/'><Image alt='Fuego étterem logója' src={logo_footer}/></Link>  }
+          
+          <div className={containerLogic}>
+           
+            <ul className={ulLogic}>
              <NavItems />
             </ul>
-            <div className={`${style.social} ${nav && style.socialNav} ${NavFooter && style.socialNavFooter}`}>
+
+            <div className={socialLinkContainerLogic}>
               <Link href={links.facebook}><Image src={facebook} alt='Fuego facebbok oldala'/></Link> 
               <Link href={links.instagram}><Image src={instagram} alt='Fuego instagram oldala'/></Link> 
             </div>
-            <div className={`${style.lng} ${NavFooter && style.lngHide} ${nav && style.lngNav}`}>
+
+            <div className={languageLinksLogic}>
               <LanguageLinks />
             </div>
-            <div className={`${nav && style.btnNav}`}><Button url={links.reservation} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName } /></div>
+
+            <div className={`${nav && style.btnNav}`}><Button btnHoverPrefix={btnHoverPrefix === 'true' ? true : false} url={links.reservation} name={btnEngLogic} /></div>
           </div>
           {nav && <Image width={25} onClick={mobileMenuHandeler} className={style.hambi} src={mobileMenu ? hambiOpen : hambiClose} alt='hamburger menu'/>}
         </nav>

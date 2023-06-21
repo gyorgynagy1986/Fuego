@@ -23,7 +23,7 @@ const Event = ({lang}) => {
       <div className={style.containerText}>
           <h2 className={dosis.className}>{!lang ? textContent.h2 :textContentEn.h2}</h2>
           <p className={style.h2}>{!lang ? textContent.p :textContentEn.p} </p>
-          <Button buttonContact={true} name={!lang ? textContent.btn :textContentEn.btn} url={'/kapcsolat'} />
+          <Button engColorPrefixBlueContact={lang ? true : false} buttonContact={true} name={!lang ? textContent.btn :textContentEn.btn} url={'/kapcsolat'} />
         </div>
       </div>
   )

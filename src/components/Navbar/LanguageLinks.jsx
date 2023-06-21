@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react'
+import style from './Navbar.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 
-const LanguageLinks = () => {
+const LanguageLinks = ({mobilStyle}) => {
     const pathname = usePathname();
     const [langHandlerEn, setLangHandlerEn] = useState('/');
     const [langHandlerHu, setLangHandlerHu] = useState('/');
 
+    const activeHandler = `${pathname === '/' || pathname === '/etlap' || pathname === '/galeria' ||  pathname === '/kapcsolat' ? style.activeLang : ''}`
+    const activeHandlerEn = `${pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? style.activeLang : ''}`
 
     useEffect(() => {
       if (pathname === '/') {
@@ -40,11 +43,14 @@ const LanguageLinks = () => {
       }
     }, [pathname]);
 
+    
+
+
   return (
-    <div>
-         <Link href={langHandlerEn}><span>EN</span></ Link>
-            <span> / </span>
-         <Link href={langHandlerHu}><span>HU </span></ Link>
+    <div className={mobilStyle && style.mobilStyle }>
+         <Link href={langHandlerEn}><span className={activeHandlerEn}>EN</span></ Link>
+            <span className={style.activeLang}> / </span>
+         <Link href={langHandlerHu}><span className={activeHandler} >HU</span></ Link>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import Logo from '../UI/Logo/Logo'
 import MobileMenuItem from './MobileMenuItem'
 import Button from '../UI/Buttons/Button'
 import { usePathname } from 'next/navigation';
+import LanguageLinks from '../../components/Navbar/LanguageLinks'
 
 import facebook from '../../../public/assets/social/facebook.svg'
 import instagram from '../../../public/assets/social/instagram.svg'
@@ -30,6 +31,7 @@ const MobileMenu = ({mobileClose}) => {
           <ul className={style.mobileMenuUl}>
         <MobileMenuItem mobileClose={mobileClose} />
           </ul>
+          <LanguageLinks mobilStyle={true} />
         <div className={style.mobileMenuSocialContainer}>
             <Link href='/'><Image src={facebook} /></Link>
             <Link href='/'><Image src={instagram} /></Link>

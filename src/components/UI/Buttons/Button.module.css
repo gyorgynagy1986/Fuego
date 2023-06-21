@@ -76,7 +76,7 @@
 
 
 .butnBlueContact::before {
-    content: 'get in touch';
+    content: 'kapcsolat';
     position: absolute;
     padding: 10px 20px;
     left: 0px;
@@ -125,7 +125,69 @@
         transition: all .1s ease-in-out;
 }
 
-
 .differentTexMainColor:hover::before {
     opacity: 1;
+}
+
+
+.engColorPrefix::before {
+    content: 'reservation';
+}
+
+.engColorPrefix:hover::before {
+opacity: 1;
+}
+
+.engColorPrefixBlue::before {
+    content: 'our menu';
+}
+
+.engColorPrefixBlue:hover::before {
+opacity: 1;
+}
+
+.engColorPrefixBlueContact::before {
+    content: 'get in touch';
+}
+
+.engColorPrefixBlueContact:hover::before {
+opacity: 1;
+}
+
+.engColorPrefixJoin::before {
+    content: 'I want to join';
+}
+
+.engColorPrefixoin:hover::before {
+opacity: 1;
+}
+
+.engColorPreReserv::before {
+    content: 'reservation';
+}
+
+.engColorPreReserv:hover::before {
+opacity: 1;
+}
+
+
+.btnHoverPrefix::before {
+    content: 'reservation';
+}
+
+.btnHoverPrefix:hover::before {
+opacity: 1;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    
+.button:hover::before {
+    opacity: 0;
+}
+
+.buttonGetInTouch:hover {
+    color: var(--navTextColor);
+}
+
 }
