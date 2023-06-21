@@ -12,11 +12,19 @@ const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
     h4: 'Rólunk',
-    p: 'Látogassatok el hozzánk a Kazinczy utcába, kóstoljátok meg hamisítatlan Fuego csirkénket és sült burgonyánkat, próbáljátok ki különleges házi készítésű szószainkat és igyatok melléjük egy jéghideg sört A Fuegoban a csirkét és a kacsát titkos fűszerkeverékünkkel készítjük el, majd saját levükben sütjük őket a sütőben, hogy ízük és állaguk egyedülálló legyen. Csapatunk a hét minden napján azon munkálkodik, hogy a lehető legjobban érezzétek magatokat nálunk, éttermünk atmoszférája és ízei pedig garantáltan felpezsdítik majd a hangulatot. ',
+    p: 'Látogassatok el hozzánk a Kazinczy utcába, kóstoljátok meg hamisítatlan Fuego csirkénket és sült burgonyánkat, próbáljátok ki különleges házi készítésű szószainkat és igyatok melléjük egy jéghideg sört.',
+    p1:'A Fuegoban a csirkét és a kacsát titkos fűszerkeverékünkkel készítjük el, majd saját levükben sütjük őket a sütőben, hogy ízük és állaguk egyedülálló legyen. Csapatunk a hét minden napján azon munkálkodik, hogy a lehető legjobban érezzétek magatokat nálunk, éttermünk atmoszférája és ízei pedig garantáltan felpezsdítik majd a hangulatot.',
     btn:'étlapunk',
 }
 
-const Story = () => {
+const textContentEn = {
+  h4: 'About us',
+  p: 'Visit us in Kazinczy Street in the 7th district of Budapest and get ready to take a bite out of our roasted chicken and baked potatoes, but neither miss to enjoy our delicious selection of sauces and some cold beers.',
+  p1:'with our secret spice blend, and we roast them in their own juices in the oven to ensure their flavor and texture are unique. Our amazing team always goes above and beyond to provide you the best dining experience. We guarantee that the ambience and flavors of our restaurant will add extra vibrancy to the mood.',
+  btn:'Our menu',
+}
+
+const Story = ({lang}) => {
 
   const parallax = useParallax({
     opacity	: [-1, 4],
@@ -32,9 +40,9 @@ const Story = () => {
           <Image  placeholder="blur" priority alt='Fuego' src={ourStoryCoverPhoto}/>   
     </div>
     <div ref={parallax.ref} className={style.textContainer}>
-      <h2 className={dosis.className}>{textContent.h4}</h2>
-      <p>{textContent.p}</p>
-          <Button btnBlue={true} url={'/etlap'} name={textContent.btn}/>
+      <h2 className={dosis.className}>{!lang ? textContent.h4 : textContentEn.h4}</h2>
+      <p>{!lang ? textContent.p : textContentEn.p } <br/><br/> {!lang ? textContent.p1 : textContentEn.p1 }</p>
+          <Button btnBlue={true} url={'/etlap'} name={!lang ? textContent.btn : textContentEn.btn}/>
     </div>
   </div>
   )

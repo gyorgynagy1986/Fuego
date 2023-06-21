@@ -5,8 +5,6 @@ import Button from '../UI/Buttons/Button'
 import ButtonGetInTouch from '../UI/Buttons/ButtonGetInTouch'
 import Image from 'next/image'
 import ContactItems from './ContactItems'
-
-
 import mapPhoto from '../../../public/assets/sections/map_contact.png' 
 
 const dosis = Dosis({ subsets: ['latin'] })
@@ -17,7 +15,13 @@ const textContent = {
     btn2: 'kapcsolat' 
 }
 
-const Contact = ({reservation}) => {
+const textContentEn = {
+  h3: 'Openin Hours',
+  btn:'reservation',
+  btn2: 'Get in Touch' 
+}
+
+const Contact = ({reservation, lang}) => {
   return (
     <section className={style.container}>
         <div className={style.imageContainer}>
@@ -25,13 +29,13 @@ const Contact = ({reservation}) => {
           <Image placeholder="blur" alt='Fuego' src={mapPhoto}/>
         </div>
         <div className={style.textContainer}>
-            <h3 className={dosis.className}>{textContent.h3}</h3>
+            <h3 className={dosis.className}>{!lang ? textContent.h3 : textContentEn.h3 }</h3>
             <div className={style.textBoxContainer}>
-              <ContactItems />
+              <ContactItems lang={lang} />
             </div>
             <div className={style.btnContainer}>
-                <Button url={reservation} name={textContent.btn}/>
-                <ButtonGetInTouch url={'/kapcsolat'} name={textContent.btn2}/>
+                <Button url={reservation} name={!lang ? textContent.btn : textContentEn.btn }/>
+                <ButtonGetInTouch url={'/kapcsolat'} name={!lang ? textContent.btn2 : textContentEn.btn2 }/>
             </div>
         </div>
     </section>

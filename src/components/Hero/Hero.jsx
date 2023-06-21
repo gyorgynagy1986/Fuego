@@ -8,8 +8,6 @@ import Button from '../UI/Buttons/Button'
 import Image from 'next/image'
 import ButtonGetInTouch from '../UI/Buttons/ButtonGetInTouch'
 import { useParallax } from 'react-scroll-parallax';
-import { Parallax } from 'react-scroll-parallax';
-
 
 import HeroCoverPhoto from '../../../public/assets/hero/hero.webp'
 
@@ -17,21 +15,24 @@ const dosis = Dosis({ subsets: ['latin'] })
 
 
 const textContent = {
-    h1: 'Fuego étterem 🔥',
-    p: 'Ennél egy finom sült csirkét vagy kacsát fűszeres burgonyával? A legjobb helyen vagy!',
-    btn:'asztalfoglalás',
-    btn2: 'kapcsolat'
+  h1: 'Fuego étterem',
+  p: 'Ennél egy finom sült csirkét vagy kacsát fűszeres burgonyával? A legjobb helyen vagy!',
+  btn:'asztalfoglalás',
+  btn2: 'kapcsolat'
 }
 
-const Hero = ({reservation}) => {
+const textContentEn = {
+  h1: 'Fuego restaurant',
+  p: 'Would you like to eat a delicious baked chicken or duck with potatoes? You are at the best place!',
+  btn:'Reservation',
+  btn2: 'Get in touch'
+}
 
+const Hero = ({reservation, lang}) => {
+  const [stickyNav, setStickyNav] = useState(false)
   const parallax = useParallax({
     speed:-5
   });
-
-
-
-  const [stickyNav, setStickyNav] = useState(false)
 
   const menuRef = useRef(null);
 
@@ -61,11 +62,11 @@ const Hero = ({reservation}) => {
         <Image placeholder="blur" alt='Fuego' priority src={HeroCoverPhoto}/>
         </div>
         <div ref={parallax.ref} className={style.textContainer}>
-            <h1 className={dosis.className}>{textContent.h1}</h1>
-            <p>{textContent.p}</p>
+              <h1 className={dosis.className}>{!lang ? textContent.h1 : textContentEn.h1}</h1>
+            <p>{!lang ? textContent.p : textContentEn.p}</p>
             <div className={style.btnContainer}>
-                <Button url={reservation} name={textContent.btn}/>
-                <ButtonGetInTouch url={'/kapcsolat'} name={textContent.btn2}/>
+                <Button url={reservation} name={!lang ? textContent.btn : textContentEn.btn}/>
+                <ButtonGetInTouch url={'/kapcsolat'} name={!lang ? textContent.btn2 : textContentEn.btn2}/>
             </div>
         </div>
     </header>

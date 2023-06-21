@@ -1,46 +1,95 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import style from './MobileMenu.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 
 
-const menuColorHanndeler = [
-    {
-      url:'/',
-      name: 'Főoldal',
-      id:1
-    },
-    {
-      url:'/galeria',
-      name: 'Galéria',
-      id:2
-    },
-    {
-      url:'/etlap',
-      name: 'Étlap',
-      id:3
-    },
-    {
-      url:'/kapcsolat',
-      name: 'Kapcsolat',
-      id:4
-    }
-  ]
+const items = [
+    
+  {
+      id:1,
+      name: 'Főoldal', 
+      url: '/'
+  }, 
+  {
+      id:2,
+      name: 'Galéria', 
+      url: '/galeria'
+  }, 
+  {
+      id:3,
+      name: 'Étlap',  
+      url: '/etlap'
+  }, 
+  {
+      id:4,
+      name: 'Kapcsolat', 
+      url: '/kapcsolat',
+  }, 
+]
+
+const itemsEng = [
+    
+  {
+      id:1,
+      name: 'Home', 
+      url: '/en/page'
+  }, 
+  {
+      id:2,
+      name: 'Gallery', 
+      url: '/en/gallery'
+  }, 
+  {
+      id:3,
+      name: 'Menu',  
+      url: '/en/menu'
+  }, 
+  {
+      id:4,
+      name: 'Contact', 
+      url: '/en/contact',
+  }, 
+]
   
 
 const MobileMenuItem = ({mobileClose}) => {
 const pathname = usePathname();
+const [langHandler, setLangHandler] = useState(false);
+
+useEffect(() => {
+  if (pathname.includes('/en')) {
+    setLangHandler(true);
+  } else {
+    setLangHandler(false)
+  }
+}, [pathname]);
  
 return (
     <>
-       {menuColorHanndeler.map((linkItem)=> (
+      {!langHandler ? items.map((linkItem)=> (
        <Link onClick={mobileClose}
              className={style.mobileMenuLink }
-             href={linkItem.url}>
+             href={linkItem.url}
+             key={linkItem.id}
+             >
+            
          <li className={pathname === linkItem.url ? style.active : ''}>
          {linkItem.name}
          </li>
-        </Link>))}
+        </Link>))
+        :
+        itemsEng.map((linkItem)=> (
+       <Link onClick={mobileClose}
+             className={style.mobileMenuLink }
+             href={linkItem.url}
+             key={linkItem.id}
+             >
+         <li className={pathname === linkItem.url ? style.active : ''}>
+         {linkItem.name}
+         </li>
+        </Link>))} 
+
     </>
   )
 }

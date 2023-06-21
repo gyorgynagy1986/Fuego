@@ -17,7 +17,15 @@ const textContent = {
     p3: 'születésnapok'
   }
 
-const Services = () => {
+  const textContentEn = {
+    h1: 'Services ',
+    p: 'We are looking forward to your table reservation, whether it is for a corporate event or celebrating a special moment in your life with your family and friends. We guarantee delicious food and a great atmosphere!',
+    p1:'Corporate events',
+    p2: 'get-togethers',
+    p3: 'birthday celebrations'
+  }
+
+const Services = ({lang}) => {
 
   const parallax = useParallax({
     opacity	: [-1, 4],
@@ -32,13 +40,13 @@ const Services = () => {
           <Image placeholder="blur" alt='Fuego' src={HeroCoverPhoto}/>
         </div>
         <div ref={parallax.ref} className={style.textContainer}>
-            <h1 className={dosis.className}>{textContent.h1}</h1>
+            <h1 className={dosis.className}>{!lang ? textContent.h1 : textContentEn.h1}</h1>
             <ul className={`${bebas.className} ${style.ulContainer}`}>
-              <li>{textContent.p1}</li>
-              <li>{textContent.p2}</li>
-              <li>{textContent.p3}</li>
+              <li>{!lang ? textContent.p1 : textContentEn.p1}</li>
+              <li>{!lang ? textContent.p2 : textContentEn.p2}</li>
+              <li>{!lang ? textContent.p3 : textContentEn.p3}</li>
             </ul>
-            <p>{textContent.p}</p>
+            <p>{!lang ? textContent.p : textContentEn.p}</p>
         </div>
     </section>
   )

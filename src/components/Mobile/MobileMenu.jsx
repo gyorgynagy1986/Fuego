@@ -5,16 +5,21 @@ import Link from 'next/link'
 import Logo from '../UI/Logo/Logo'
 import MobileMenuItem from './MobileMenuItem'
 import Button from '../UI/Buttons/Button'
+import { usePathname } from 'next/navigation';
 
 import facebook from '../../../public/assets/social/facebook.svg'
 import instagram from '../../../public/assets/social/instagram.svg'
 
-const textContent = {
-  btn: 'asztalfoglalás'
+const textContentHu = {
+  btnName:'asztalfoglalás',
 }
 
+const textContentEng = {
+btnName:'reservation',
+}
 
 const MobileMenu = ({mobileClose}) => {
+  const pathname = usePathname()
 
 
   return (
@@ -29,7 +34,7 @@ const MobileMenu = ({mobileClose}) => {
             <Link href='/'><Image src={facebook} /></Link>
             <Link href='/'><Image src={instagram} /></Link>
         </div>
-        <Button url={'/'} name={textContent.btn} />
+        <Button url={'/'} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName } />
       </div>
     </div>
   </>

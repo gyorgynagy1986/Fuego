@@ -1,7 +1,6 @@
 "use client"
 
 import '../../../src/app/page.module.css';
-
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import style from './Navbar.module.css'
@@ -14,10 +13,16 @@ import hambiOpen from '../../../public/assets/hambi/hambi_open.svg'
 import hambiClose from '../../../public/assets/hambi/hambi_close.svg'
 import MobileMenu from '../Mobile/MobileMenu'
 import NavItems from './NavItems';
+import LanguageLinks from './LanguageLinks';
+import { usePathname } from 'next/navigation';
 
 
-const textContent = {
+const textContentHu = {
     btnName:'asztalfoglalás',
+}
+
+const textContentEng = {
+  btnName:'reservation',
 }
 
 const links = {
@@ -26,10 +31,10 @@ const links = {
   reservation: 'https://reservours.com/fuego/tablereservation?s=website' 
 }
 
-
-const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
+const Navbar = ({NavFooter, nav, colorMobileMenu, lang}) => {
 
   const [mobileMenu, SetMobileMene] = useState(false);
+  const pathname = usePathname()
 
   const mobileMenuHandeler = () => {
     SetMobileMene(prevmobileMenu => !prevmobileMenu )
@@ -61,11 +66,9 @@ const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
               <Link href={links.instagram}><Image src={instagram} alt='Fuego instagram oldala'/></Link> 
             </div>
             <div className={`${style.lng} ${NavFooter && style.lngHide} ${nav && style.lngNav}`}>
-                <span>EN </span>
-                <span>/</span>
-                <span>HU</span>
+              <LanguageLinks />
             </div>
-            <div className={`${nav && style.btnNav}`}><Button url={links.reservation} name={textContent.btnName} /></div>
+            <div className={`${nav && style.btnNav}`}><Button url={links.reservation} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName } /></div>
           </div>
           {nav && <Image width={25} onClick={mobileMenuHandeler} className={style.hambi} src={mobileMenu ? hambiOpen : hambiClose} alt='hamburger menu'/>}
         </nav>
