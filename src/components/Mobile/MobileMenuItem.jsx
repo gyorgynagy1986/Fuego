@@ -33,7 +33,7 @@ const itemsEng = [
   {
       id:1,
       name: 'Home', 
-      url: '/en/page'
+      url: '/en'
   }, 
   {
       id:2,
