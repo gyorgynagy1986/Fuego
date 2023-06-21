@@ -10,9 +10,12 @@ const dosis = Dosis({ subsets: ['latin'] })
 const bebas = Bebas_Neue({ subsets: ['latin'], weight:'400' })
 
 const textContent = {
-    h1: 'Our services',
-    p: 'Etiam et diam ac ullamcorper turpis. Etiam et diam orci. Phasellus vitae gravida dolor. Etiam et diam ac ullamcorper turpis. Etiam et diam orci. Phasellus vitae gravida dolor.Etiam et diam ac ullamcorper turpis. Etiam et diam orci. Phasellus vitae gravida dolor.',
-}
+    h1: 'Szolgáltatások ',
+    p: 'Örömmel várjuk asztalfoglalásod, legyen szó céges rendezvényről, vagy megünnepelnéd életed egy különleges pillanatát családod és barátaid körében. Mi biztosítjuk az ínycsiklandó ételeket és a jó hangulatot!',
+    p1:'Céges rendezvények',
+    p2: 'baráti összejövetelek',
+    p3: 'születésnapok'
+  }
 
 const Services = () => {
 
@@ -31,9 +34,9 @@ const Services = () => {
         <div ref={parallax.ref} className={style.textContainer}>
             <h1 className={dosis.className}>{textContent.h1}</h1>
             <ul className={`${bebas.className} ${style.ulContainer}`}>
-              <li>Céges rendezvények</li>
-              <li>baráti összejövetelek</li>
-              <li>születésnapok</li>
+              <li>{textContent.p1}</li>
+              <li>{textContent.p2}</li>
+              <li>{textContent.p3}</li>
             </ul>
             <p>{textContent.p}</p>
         </div>

@@ -12,7 +12,7 @@ import mapPhoto from '../../../public/assets/sections/map_contact.png'
 const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
-    h3: 'Opening hours',
+    h3: 'Nyitvatartás',
     btn:'asztalfoglalás',
     btn2: 'kapcsolat' 
 }
@@ -26,7 +26,7 @@ const Contact = ({reservation}) => {
         </div>
         <div className={style.textContainer}>
             <h3 className={dosis.className}>{textContent.h3}</h3>
-            <div class={style.textBoxContainer}>
+            <div className={style.textBoxContainer}>
               <ContactItems />
             </div>
             <div className={style.btnContainer}>

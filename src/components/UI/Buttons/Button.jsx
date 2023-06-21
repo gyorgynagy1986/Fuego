@@ -11,10 +11,10 @@ const Button = ({name, url, btnBlue, buttonContact, differentTexMainColor}) => {
       <button 
         className={
           `${style.button}
-          ${differentTexMainColor && style.differentTexMainColor}
-          ${buttonContact && style.butnBlueContact}
-          ${btnBlue && style.butnBlue}
-          ${bebas.className}`}>
+           ${differentTexMainColor && style.differentTexMainColor}
+           ${buttonContact && style.butnBlueContact}
+           ${btnBlue && style.butnBlue}
+           ${bebas.className}`}>
           {name}
       </button>
     </Link>

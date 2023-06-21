@@ -17,8 +17,8 @@ const dosis = Dosis({ subsets: ['latin'] })
 
 
 const textContent = {
-    h1: 'Lorem ipsum dolor sit amet',
-    p: 'Etiam et diam ac ullamcorper turpis. Etiam et diam orci. Phasellus vitae gravida dolor.',
+    h1: 'Fuego étterem 🔥 ',
+    p: 'Ennél egy finom sült csirkét vagy kacsát fűszeres burgonyával? A legjobb helyen vagy!',
     btn:'asztalfoglalás',
     btn2: 'kapcsolat'
 }

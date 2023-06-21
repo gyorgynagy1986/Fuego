@@ -30,7 +30,7 @@ const closeGallery = () => {
 
   return (
     <>
-      {!galleryOpen && <h1 className={`${style.h1} ${dosis.className}`}>Gallery</h1> }
+      {!galleryOpen && <h1 className={`${style.h1} ${dosis.className}`}>Galéria</h1> }
      { !galleryOpen && <div className={style.container}> 
         {!galleryOpen &&<CoverPhotoItems photoGalleryHandler={openGallery} />}
       </div> }

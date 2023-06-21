@@ -1,11 +1,18 @@
 import React from 'react'
 
+
+const textContent = {
+  day: 'Monday - Sunday',
+  time: '12:00 - 23:30'
+}
+
+
 const ContactItems = () => {
   return (
     <>
         <div>
-            <p>Monday - Sunday</p>
-            <p>12:00 - 23:30</p>
+            <p>{textContent.day}</p>
+            <p>{textContent.time}</p>
          </div>
     </>
   )

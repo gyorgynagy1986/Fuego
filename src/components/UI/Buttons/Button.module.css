@@ -112,7 +112,7 @@
 }
 
 .differentTexMainColor::before {
-        content: 'I want to join';
+        content: 'Csatlakozom';
         position: absolute;
         padding: 10px 20px;
         left: 0px;

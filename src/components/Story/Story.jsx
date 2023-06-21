@@ -11,8 +11,8 @@ import ourStoryCoverPhoto from '../../../public/assets/sections/Our_story.png'
 const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
-    h4: 'Our story',
-    p: 'Suspendisse in bibendum lorem, ac ullamcorper turpis. Etiam et diam orci. Phasellus vitae gravida dolor. Nunc sollicitudin diam. Suspendisse in bibendum lorem, ac ullamcorper turpis. Etiam et diam orci. Phasellus vitae gravida dolor. Nunc sollicitudin diam.',
+    h4: 'Rólunk',
+    p: 'Látogassatok el hozzánk a Kazinczy utcába, kóstoljátok meg hamisítatlan Fuego csirkénket és sült burgonyánkat, próbáljátok ki különleges házi készítésű szószainkat és igyatok melléjük egy jéghideg sört A Fuegoban a csirkét és a kacsát titkos fűszerkeverékünkkel készítjük el, majd saját levükben sütjük őket a sütőben, hogy ízük és állaguk egyedülálló legyen. Csapatunk a hét minden napján azon munkálkodik, hogy a lehető legjobban érezzétek magatokat nálunk, éttermünk atmoszférája és ízei pedig garantáltan felpezsdítik majd a hangulatot. ',
     btn:'étlapunk',
 }
 

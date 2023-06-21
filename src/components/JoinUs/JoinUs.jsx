@@ -8,9 +8,10 @@ import { useParallax } from 'react-scroll-parallax';
 
 const dosis = Dosis({ subsets: ['latin'] })
 
+
 const textContent = {
-  h2: 'Join our team!', 
-  btn:'I want to join'
+  h2: 'Dolgozz velünk!', 
+  btn:'Csatlakozom',
 }
 
 const JoinUs = () => {
@@ -25,7 +26,7 @@ const JoinUs = () => {
     <div ref={parallax.ref} className={style.container}>
       <div className={style.containerText}>
           <h2 className={dosis.className}>{textContent.h2}</h2>
-          <p className={style.h2}>Drop us an e-mail to <span>hola@fuegobp.hu</span> with your CV and position you’d be interested in!We’ll get back to you as soon as possible!</p>
+          <p className={style.h2}>Írj nekünk a return <span>hola@fuegobp.hu</span> e-mail címre és küldd el az önéletrajzod a pozíció megjelölésével! Amint lehetőségünk lesz rá, mielőbb válaszolni fogunk Neke</p>
           <Button differentTexMainColor={true} name={textContent.btn} url={'/kapcsolat'} />
         </div>
       </div>
