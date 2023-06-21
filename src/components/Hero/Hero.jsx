@@ -18,14 +18,17 @@ const textContent = {
   h1: 'Fuego étterem',
   p: 'Ennél egy finom sült csirkét vagy kacsát fűszeres burgonyával? A legjobb helyen vagy!',
   btn:'asztalfoglalás',
-  btn2: 'kapcsolat'
+  btn2: 'kapcsolat',
+  url: '/kapcsolat'
 }
 
 const textContentEn = {
   h1: 'Fuego restaurant',
   p: 'Would you like to eat a delicious baked chicken or duck with potatoes? You are at the best place!',
   btn:'Reservation',
-  btn2: 'Get in touch'
+  btn2: 'Get in touch',
+  url: '/en/contact'
+
 }
 
 const Hero = ({reservation, lang}) => {
@@ -65,7 +68,7 @@ const Hero = ({reservation, lang}) => {
             <p>{!lang ? textContent.p : textContentEn.p}</p>
             <div className={style.btnContainer}>
                 <Button engColorPrefix={lang ? true : false} url={reservation} name={!lang ? textContent.btn : textContentEn.btn}/>
-                <ButtonGetInTouch url={'/kapcsolat'} name={!lang ? textContent.btn2 : textContentEn.btn2}/>
+                <ButtonGetInTouch url={!lang ? textContent.url : textContentEn.url} name={!lang ? textContent.btn2 : textContentEn.btn2}/>
             </div>
         </div>
     </header>

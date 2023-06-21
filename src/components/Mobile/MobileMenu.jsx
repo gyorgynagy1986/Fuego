@@ -31,7 +31,7 @@ const MobileMenu = ({mobileClose}) => {
           <ul className={style.mobileMenuUl}>
         <MobileMenuItem mobileClose={mobileClose} />
           </ul>
-          <LanguageLinks mobilStyle={true} />
+          <LanguageLinks mobileClose={mobileClose} mobilStyle={true} />
         <div className={style.mobileMenuSocialContainer}>
             <Link href='/'><Image src={facebook} /></Link>
             <Link href='/'><Image src={instagram} /></Link>

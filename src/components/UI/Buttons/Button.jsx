@@ -7,8 +7,6 @@ const bebas = Bebas_Neue({ subsets: ['latin'], weight: "400" })
 
 const Button = ({name, url, btnBlue, btnHoverPrefix, engColorPreReserv,  buttonContact, engColorPrefixJoin,  differentTexMainColor, engColorPrefix, engColorPrefixBlue, engColorPrefixBlueContact}) => {
 
-  console.log(differentTexMainColor, 'COLOR')
-
   return (
     <Link href={url}>
       <button 

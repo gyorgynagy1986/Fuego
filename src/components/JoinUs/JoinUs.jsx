@@ -12,11 +12,13 @@ const dosis = Dosis({ subsets: ['latin'] })
 const textContent = {
   h2: 'Dolgozz velünk!', 
   btn:'Csatlakozom',
+  url:'/kapcsolat'
 }
 
 const textContentEn = {
   h2: 'Join our team! ', 
   btn:'I want to join',
+  url:'/en/contact'
 }
 
 const text = <p className={style.h2}>Írj nekünk a return <span>hola@fuegobp.hu</span> e-mail címre és küldd el az önéletrajzod a pozíció megjelölésével! Amint lehetőségünk lesz rá, mielőbb válaszolni fogunk Neked!</p>
@@ -35,7 +37,7 @@ const JoinUs = ({lang}) => {
       <div className={style.containerText}>
           <h2 className={dosis.className}>{!lang ? textContent.h2 : textContentEn.h2 }</h2>
             {!lang ? text : textEn}
-          <Button engColorPrefixJoin={lang ? true : false} differentTexMainColor={true} name={!lang ? textContent.btn : textContentEn.btn } url={'/kapcsolat'} />
+          <Button engColorPrefixJoin={lang ? true : false} differentTexMainColor={true} name={!lang ? textContent.btn : textContentEn.btn } url={!lang ? textContent.url :textContentEn.url} />
         </div>
       </div>
   )

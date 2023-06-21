@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import etlap from '../../../../public/assets/menu/1.png'
-import itallap from '../../../../public/assets/menu/2.png'
+import itallap from '../../../../public/assets/menu/2_eng.png'
 import style from './page.module.css'
 import { Dosis } from 'next/font/google'
 
@@ -11,7 +11,7 @@ const dosis = Dosis({ subsets: ['latin'] })
 const Menu = () => {
 
   const handleClickFood = () => {
-    window.location.href = '/etlap.pdf';
+    window.location.href = '/menu_eng.pdf';
   };
 
   const handleClickDrinks = () => {

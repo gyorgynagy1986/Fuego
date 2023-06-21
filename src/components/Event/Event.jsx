@@ -8,13 +8,15 @@ const dosis = Dosis({ subsets: ['latin'] })
 const textContent = {
   h2: 'Szeretnél egy rendezvényt tartani a Fuego-ban? ', 
   p: 'Hívj minket vagy írj nekünk, ha rendezvényt szeretnél tartani nálunk! Bátran bízd ránk a szervezést, Ti pedig élvezzétek az élményt!',
-  btn:'kapcsolat'
+  btn:'kapcsolat',
+  url: '/kapcsolat'
 }
 
 const textContentEn = {
   h2: 'Want to have an event at Fuego?', 
   p: 'Call us or drop us a message if you would like to host an event with us. Feel free to entrust us with the organization, while you enjoy the experience to the fullest!',
-  btn:'Get in touch'
+  btn:'Get in touch',
+  url: '/en/contact'
 }
 
 const Event = ({lang}) => {
@@ -23,7 +25,7 @@ const Event = ({lang}) => {
       <div className={style.containerText}>
           <h2 className={dosis.className}>{!lang ? textContent.h2 :textContentEn.h2}</h2>
           <p className={style.h2}>{!lang ? textContent.p :textContentEn.p} </p>
-          <Button engColorPrefixBlueContact={lang ? true : false} buttonContact={true} name={!lang ? textContent.btn :textContentEn.btn} url={'/kapcsolat'} />
+          <Button engColorPrefixBlueContact={lang ? true : false} buttonContact={true} name={!lang ? textContent.btn :textContentEn.btn} url={!lang ? textContent.url :textContentEn.url} />
         </div>
       </div>
   )

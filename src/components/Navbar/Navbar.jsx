@@ -54,7 +54,7 @@ const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
     }
   }, [mobileMenu]);
  
- 
+
   const navClass = `${style.nav} ${nav && style.navNav} ${NavFooter && style.footerNav} ${colorMobileMenu && style.colorMobileMenu}`;
   const linkClass = `${NavFooter && style.logoFooterMobile}`;
   const containerLogic = `${style.rightItemsContainer} ${NavFooter && style.ulCenter} ${NavFooter && style.containerUlMobile}`;
@@ -63,9 +63,6 @@ const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
   const languageLinksLogic = `${style.lng} ${NavFooter && style.lngHide} ${nav && style.lngNav}`;
   const btnEngLogic = `${pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName }`
   const btnHoverPrefix = `${pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery'}`
-
-  console.log(btnHoverPrefix, 'hover');
-
 
   return (
     <>

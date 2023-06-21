@@ -3,7 +3,7 @@ import style from './Navbar.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 
-const LanguageLinks = ({mobilStyle}) => {
+const LanguageLinks = ({mobilStyle, mobileClose}) => {
     const pathname = usePathname();
     const [langHandlerEn, setLangHandlerEn] = useState('/');
     const [langHandlerHu, setLangHandlerHu] = useState('/');
@@ -48,9 +48,9 @@ const LanguageLinks = ({mobilStyle}) => {
 
   return (
     <div className={mobilStyle && style.mobilStyle }>
-         <Link href={langHandlerEn}><span className={activeHandlerEn}>EN</span></ Link>
+         <Link onClick={mobileClose}  href={langHandlerEn}><span className={activeHandlerEn}>EN</span></ Link>
             <span className={style.activeLang}> / </span>
-         <Link href={langHandlerHu}><span className={activeHandler} >HU</span></ Link>
+         <Link onClick={mobileClose} href={langHandlerHu}><span className={activeHandler} >HU</span></ Link>
     </div>
   )
 }
