@@ -21,7 +21,7 @@ const textContent = {
 const textContentEn = {
   h4: 'About us',
   p: 'Visit us in Kazinczy Street in the 7th district of Budapest and get ready to take a bite out of our roasted chicken and baked potatoes, but neither miss to enjoy our delicious selection of sauces and some cold beers.',
-  p1:'with our secret spice blend, and we roast them in their own juices in the oven to ensure their flavor and texture are unique. Our amazing team always goes above and beyond to provide you the best dining experience. We guarantee that the ambience and flavors of our restaurant will add extra vibrancy to the mood.',
+  p1:'With our secret spice blend, and we roast them in their own juices in the oven to ensure their flavor and texture are unique. Our amazing team always goes above and beyond to provide you the best dining experience. We guarantee that the ambience and flavors of our restaurant will add extra vibrancy to the mood.',
   btn:'Our menu',
   url:'/en/menu'
 }
