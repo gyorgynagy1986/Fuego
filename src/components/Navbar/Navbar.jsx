@@ -31,8 +31,6 @@ const links = {
   reservation: 'https://reservours.com/fuego/tablereservation?s=website' 
 }
 
-
-
 const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
   
   const [mobileMenu, SetMobileMene] = useState(false);
@@ -54,7 +52,6 @@ const Navbar = ({NavFooter, nav, colorMobileMenu}) => {
     }
   }, [mobileMenu]);
  
-
   const navClass = `${style.nav} ${nav && style.navNav} ${NavFooter && style.footerNav} ${colorMobileMenu && style.colorMobileMenu}`;
   const linkClass = `${NavFooter && style.logoFooterMobile}`;
   const containerLogic = `${style.rightItemsContainer} ${NavFooter && style.ulCenter} ${NavFooter && style.containerUlMobile}`;

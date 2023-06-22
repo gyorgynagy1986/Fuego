@@ -15,8 +15,6 @@ const Gallery = () => {
 const [galleryOpen, setGalleryOpen ] = useState(false);
 const [selectedImageId, setSelectedImageId] = useState(null);
 
-console.log(galleryOpen)
-
 const openGallery = (id) => {
   setSelectedImageId(id);
   setGalleryOpen(true);
