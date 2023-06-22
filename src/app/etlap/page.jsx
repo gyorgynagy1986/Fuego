@@ -8,6 +8,7 @@ import { Dosis } from 'next/font/google'
 
 const dosis = Dosis({ subsets: ['latin'] })
 
+
 const Menu = () => {
 
   const handleClickFood = () => {
@@ -17,7 +18,6 @@ const Menu = () => {
   const handleClickDrinks = () => {
     window.location.href = '/itallap.pdf';
   };
-
 
   return (
     <>

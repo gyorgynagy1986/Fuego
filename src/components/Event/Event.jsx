@@ -21,13 +21,13 @@ const textContentEn = {
 
 const Event = ({lang}) => {
   return (
-    <div className={style.container}>
+    <section className={style.container}>
       <div className={style.containerText}>
           <h2 className={dosis.className}>{!lang ? textContent.h2 :textContentEn.h2}</h2>
           <p className={style.h2}>{!lang ? textContent.p :textContentEn.p} </p>
           <Button engColorPrefixBlueContact={lang ? true : false} buttonContact={true} name={!lang ? textContent.btn :textContentEn.btn} url={!lang ? textContent.url :textContentEn.url} />
         </div>
-      </div>
+      </section>
   )
 }
 

@@ -24,6 +24,12 @@ const textContentEn = {
 }
 
 const Contact = ({reservation, lang}) => {
+
+const h3EngLogic = !lang ? textContent.h3 : textContentEn.h3;
+const btnNameLogic = !lang ? textContent.btn : textContentEn.btn;
+const btnNameLogic2 = !lang ? textContent.btn2 : textContentEn.btn2;
+
+
   return (
     <section className={style.container}>
         <div className={style.imageContainer}>
@@ -31,13 +37,13 @@ const Contact = ({reservation, lang}) => {
           <Image placeholder="blur" alt='Fuego' src={mapPhoto}/>
         </div>
         <div className={style.textContainer}>
-            <h3 className={dosis.className}>{!lang ? textContent.h3 : textContentEn.h3 }</h3>
+            <h3 className={dosis.className}>{h3EngLogic}</h3>
             <div className={style.textBoxContainer}>
               <ContactItems lang={lang} />
             </div>
             <div className={style.btnContainer}>
-                <Button engColorPreReserv={lang ? true : false} url={reservation} name={!lang ? textContent.btn : textContentEn.btn }/>
-                <ButtonGetInTouch url={!lang ? textContent.url :textContentEn.url} name={!lang ? textContent.btn2 : textContentEn.btn2 }/>
+                <Button engColorPreReserv={lang ? true : false} url={reservation} name={btnNameLogic}/>
+                <ButtonGetInTouch url={!lang ? textContent.url :textContentEn.url} name={btnNameLogic2}/>
             </div>
         </div>
     </section>

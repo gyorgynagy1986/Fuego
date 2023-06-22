@@ -11,7 +11,6 @@ const LanguageLinks = ({mobilStyle, mobileClose}) => {
     const activeHandler = `${pathname === '/' || pathname === '/etlap' || pathname === '/galeria' ||  pathname === '/kapcsolat' ? style.activeLang : ''}`
     const activeHandlerEn = `${pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? style.activeLang : ''}`
 
-    console.log(langHandlerEn)
 
     useEffect(() => {
       if (pathname === '/') {
@@ -45,9 +44,7 @@ const LanguageLinks = ({mobilStyle, mobileClose}) => {
       }
     }, [pathname]);
 
-    
-
-
+  
   return (
     <div className={mobilStyle && style.mobilStyle }>
          <Link onClick={mobileClose}  href={langHandlerEn}><span className={activeHandlerEn}>EN</span></ Link>

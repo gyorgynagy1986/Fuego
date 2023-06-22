@@ -11,13 +11,17 @@ const textContentEn = {
   time: '12:00 - 23:30'
 }
 
-
 const ContactItems = ({lang}) => {
+
+  const textLangLogic = !lang ? textContent.day : textContentEn.day;
+  const textLangLogic2 = !lang ? textContent.time : textContentEn.time;
+
+
   return (
     <>
         <div>
-            <p>{!lang ? textContent.day : textContentEn.day}</p>
-            <p>{!lang ? textContent.time : textContentEn.time}</p>
+            <p>{textLangLogic}</p>
+            <p>{textLangLogic2}</p>
          </div>
     </>
   )

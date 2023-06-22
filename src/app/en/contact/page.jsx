@@ -8,6 +8,9 @@ import instagram from '../../../../public/assets/social/instagram.svg'
 import { Dosis } from 'next/font/google'
 const dosis = Dosis({ subsets: ['latin'] })
 
+export const metadata = {
+  title: 'Contact - Fuego',
+}
 
 const textContent = {
   h3: 'Restaurante Fuego',

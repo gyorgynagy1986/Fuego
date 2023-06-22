@@ -8,7 +8,6 @@ import instagram from '../../../public/assets/social/instagram.svg'
 import { Dosis } from 'next/font/google'
 const dosis = Dosis({ subsets: ['latin'] })
 
-
 const textContent = {
   h3: 'Restaurante Fuego',
   btn:'asztalfoglalás',

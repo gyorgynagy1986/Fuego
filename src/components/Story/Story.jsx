@@ -41,7 +41,7 @@ const Story = ({lang}) => {
   });
 
   return (
-  <div className={style.container}>
+  <section className={style.container}>
     
      <div className={style.imageContainer}>
         <div className={style.layer}></div>
@@ -53,7 +53,7 @@ const Story = ({lang}) => {
       <p>{pText} <br/><br/>{pText2}</p>
       <Button engColorPrefixBlue={lang ? true : false} btnBlue={true} url={btnUrl} name={btnName}/>
     </div>
-  </div>
+  </section>
   )
 }
 

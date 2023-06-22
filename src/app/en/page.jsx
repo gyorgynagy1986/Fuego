@@ -27,7 +27,7 @@ export default function Home() {
         <JoinUs lang={true}/>
         <Contact lang={true} reservation={links.reservation} />
       </main>
-      </ParallaxProvider>
+    </ParallaxProvider>
     </>
   )
 }
