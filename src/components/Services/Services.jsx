@@ -27,7 +27,7 @@ const textContent = {
 
 const Services = ({lang}) => {
 
-  const titleLogic = !lang ? textContent.h1 : textContentEn.h2;
+  const titleLogic = !lang ? textContent.h2 : textContentEn.h2;
   const liLogic = !lang ? textContent.p1 : textContentEn.p1;
   const liLogic2 = !lang ? textContent.p2 : textContentEn.p2;
   const liLogic3 = !lang ? textContent.p3 : textContentEn.p3;
