@@ -91,7 +91,7 @@
 }
 
 
-.textContainer h3 {
+.textContainer h2 {
     color: var(--titleColor);
     font-size: 48px;
     letter-spacing: 0.02em;
@@ -141,7 +141,7 @@
         min-height: 177px;
     }
 
-    .textContainer h3 {
+    .textContainer h2 {
         font-weight: 800;
         font-size: 28px;
         line-height: 35px;

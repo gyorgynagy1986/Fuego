@@ -10,7 +10,7 @@ const dosis = Dosis({ subsets: ['latin'] })
 const bebas = Bebas_Neue({ subsets: ['latin'], weight:'400' })
 
 const textContent = {
-    h1: 'Szolgáltatások ',
+    h2: 'Szolgáltatások ',
     p: 'Örömmel várjuk asztalfoglalásod, legyen szó céges rendezvényről, vagy megünnepelnéd életed egy különleges pillanatát családod és barátaid körében. Mi biztosítjuk az ínycsiklandó ételeket és a jó hangulatot!',
     p1:'Céges rendezvények',
     p2: 'baráti összejövetelek',
@@ -18,7 +18,7 @@ const textContent = {
   }
 
   const textContentEn = {
-    h1: 'Services ',
+    h2: 'Services ',
     p: 'We are looking forward to your table reservation, whether it is for a corporate event or celebrating a special moment in your life with your family and friends. We guarantee delicious food and a great atmosphere!',
     p1:'Corporate events',
     p2: 'get-togethers',
@@ -26,6 +26,13 @@ const textContent = {
   }
 
 const Services = ({lang}) => {
+
+  const titleLogic = !lang ? textContent.h1 : textContentEn.h2;
+  const liLogic = !lang ? textContent.p1 : textContentEn.p1;
+  const liLogic2 = !lang ? textContent.p2 : textContentEn.p2;
+  const liLogic3 = !lang ? textContent.p3 : textContentEn.p3;
+  const pLgoic = !lang ? textContent.p : textContentEn.p;
+  const ulStyle = `${bebas.className} ${style.ulContainer}`;
 
   const parallax = useParallax({
     opacity	: [-1, 4],
@@ -40,13 +47,13 @@ const Services = ({lang}) => {
           <Image placeholder="blur" alt='Fuego' src={HeroCoverPhoto}/>
         </div>
         <div ref={parallax.ref} className={style.textContainer}>
-            <h1 className={dosis.className}>{!lang ? textContent.h1 : textContentEn.h1}</h1>
-            <ul className={`${bebas.className} ${style.ulContainer}`}>
-              <li>{!lang ? textContent.p1 : textContentEn.p1}</li>
-              <li>{!lang ? textContent.p2 : textContentEn.p2}</li>
-              <li>{!lang ? textContent.p3 : textContentEn.p3}</li>
+            <h2 className={dosis.className}>{titleLogic}</h2>
+            <ul className={ulStyle}>
+              <li>{liLogic}</li>
+              <li>{liLogic2}</li>
+              <li>{liLogic3}</li>
             </ul>
-            <p>{!lang ? textContent.p : textContentEn.p}</p>
+            <p>{pLgoic}</p>
         </div>
     </section>
   )

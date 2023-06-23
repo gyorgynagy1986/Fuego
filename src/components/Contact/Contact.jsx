@@ -10,14 +10,14 @@ import mapPhoto from '../../../public/assets/sections/map_contact.jpg'
 const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
-    h3: 'Nyitvatartás',
+    h2: 'Nyitvatartás',
     btn:'asztalfoglalás',
     btn2: 'kapcsolat',
     url:'/kapcsolat'
 }
 
 const textContentEn = {
-  h3: 'Openin Hours',
+  h2: 'Openin Hours',
   btn:'reservation',
   btn2: 'Get in Touch',
   url:'/en/contact'
@@ -25,7 +25,7 @@ const textContentEn = {
 
 const Contact = ({reservation, lang}) => {
 
-const h3EngLogic = !lang ? textContent.h3 : textContentEn.h3;
+const h3EngLogic = !lang ? textContent.h2 : textContentEn.h2;
 const btnNameLogic = !lang ? textContent.btn : textContentEn.btn;
 const btnNameLogic2 = !lang ? textContent.btn2 : textContentEn.btn2;
 
@@ -37,7 +37,7 @@ const btnNameLogic2 = !lang ? textContent.btn2 : textContentEn.btn2;
           <Image placeholder="blur" alt='Fuego' src={mapPhoto}/>
         </div>
         <div className={style.textContainer}>
-            <h3 className={dosis.className}>{h3EngLogic}</h3>
+            <h2 className={dosis.className}>{h3EngLogic}</h2>
             <div className={style.textBoxContainer}>
               <ContactItems lang={lang} />
             </div>

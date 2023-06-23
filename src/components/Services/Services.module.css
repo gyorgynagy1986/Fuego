@@ -37,7 +37,7 @@
     order: 1;
 }
 
-.textContainer h1 {
+.textContainer h2 {
     color: var(--titleColor);
     font-size: 48px;
     letter-spacing: 0.02em;
