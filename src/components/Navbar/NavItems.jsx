@@ -25,6 +25,11 @@ const items = [
       name: 'Kapcsolat', 
       url: '/kapcsolat',
   }, 
+  {
+    id:5,
+    name: 'Nyitvatartás', 
+    url: '/#opening',
+}, 
 ]
 
 const itemsEng = [
@@ -49,6 +54,11 @@ const itemsEng = [
       name: 'Contact', 
       url: '/en/contact',
   }, 
+  {
+    id:5,
+    name: 'Opening Horus', 
+    url: 'en/#opening',
+}, 
 ]
 
 

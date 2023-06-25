@@ -20,12 +20,18 @@ const textContentEn = {
 }
 
 const Event = ({lang}) => {
+
+  const h2Logic = !lang ? textContent.h2 :textContentEn.h2;
+  const pLogic = !lang ? textContent.p :textContentEn.p;
+  const buttonNameLogic = !lang ? textContent.btn :textContentEn.btn;
+  const urlLogic = !lang ? textContent.url :textContentEn.url
+
   return (
     <section className={style.container}>
       <div className={style.containerText}>
-          <h2 className={dosis.className}>{!lang ? textContent.h2 :textContentEn.h2}</h2>
-          <p className={style.h2}>{!lang ? textContent.p :textContentEn.p} </p>
-          <Button engColorPrefixBlueContact={lang ? true : false} buttonContact={true} name={!lang ? textContent.btn :textContentEn.btn} url={!lang ? textContent.url :textContentEn.url} />
+          <h2 className={dosis.className}>{h2Logic}</h2>
+          <p className={style.h2}>{pLogic}</p>
+          <Button engColorPrefixBlueContact={lang ? true : false} buttonContact={true} name={buttonNameLogic} url={urlLogic} />
         </div>
       </section>
   )

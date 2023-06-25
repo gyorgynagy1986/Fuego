@@ -8,11 +8,9 @@ import Button from '../UI/Buttons/Button'
 import Image from 'next/image'
 import ButtonGetInTouch from '../UI/Buttons/ButtonGetInTouch'
 import { useParallax } from 'react-scroll-parallax';
-
 import HeroCoverPhoto from '../../../public/assets/hero/hero.webp'
 
 const dosis = Dosis({ subsets: ['latin'] })
-
 
 const textContent = {
   h1: 'Fuego étterem',
@@ -28,7 +26,6 @@ const textContentEn = {
   btn:'Reservation',
   btn2: 'Get in touch',
   url: '/en/contact'
-
 }
 
 const Hero = ({reservation, lang}) => {
@@ -58,7 +55,7 @@ const Hero = ({reservation, lang}) => {
   return (
     <header  ref={menuRef} className={style.container}>
         {stickyNav && <StickyNav />}
-         <div  className={style.imageContainer}>
+          <div  className={style.imageContainer}>
           <div className={style.layer}></div>
           <div className={style.layerTop}></div>
         <Image placeholder="blur" alt='Fuego' priority src={HeroCoverPhoto}/>

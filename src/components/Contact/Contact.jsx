@@ -31,7 +31,7 @@ const btnNameLogic2 = !lang ? textContent.btn2 : textContentEn.btn2;
 
 
   return (
-    <section className={style.container}>
+    <section id="opening" className={style.container}>
         <div className={style.imageContainer}>
           <div className={style.layer}></div>
           <Image placeholder="blur" alt='Fuego' src={mapPhoto}/>

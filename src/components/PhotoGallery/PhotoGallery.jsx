@@ -66,8 +66,7 @@ const PhotoGallery = ({galleryClose, clickedItem}) => {
      
     ];
 
-
-    const currentPhoto = photos[currentPhotoIndex];
+  const currentPhoto = photos[currentPhotoIndex];
 
   const handleNextPhoto = () => {
     if (currentPhotoIndex < photos.length - 1 && imageLoaded) {
@@ -113,7 +112,6 @@ const PhotoGallery = ({galleryClose, clickedItem}) => {
     }
   };
   
-
     return (
          <>
           <div  className={style.container}>
