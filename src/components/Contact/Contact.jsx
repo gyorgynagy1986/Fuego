@@ -17,7 +17,7 @@ const textContent = {
 }
 
 const textContentEn = {
-  h2: 'Openin Hours',
+  h2: 'Opening Hours',
   btn:'reservation',
   btn2: 'Get in Touch',
   url:'/en/contact'
