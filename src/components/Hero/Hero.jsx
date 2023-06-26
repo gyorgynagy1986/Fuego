@@ -14,7 +14,7 @@ const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
   h1: 'Fuego étterem',
-  p: 'Ennél egy finom sült csirkét vagy kacsát fűszeres burgonyával? A legjobb helyen vagy!',
+  p: 'Egy ízletes sült csirkére vagy sült kacsára vágysz fűszeres burgonyával? A legjobb helyen vagy!',
   btn:'asztalfoglalás',
   btn2: 'kapcsolat',
   url: '/kapcsolat'
@@ -22,7 +22,7 @@ const textContent = {
 
 const textContentEn = {
   h1: 'Fuego restaurant',
-  p: 'Would you like to eat a delicious baked chicken or duck with potatoes? You are at the best place!',
+  p: 'Would you like to try a delicious grilled chicken or grilled duck with potatoes? You are at the best place!',
   btn:'Reservation',
   btn2: 'Get in touch',
   url: '/en/contact'

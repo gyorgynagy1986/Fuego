@@ -6,15 +6,15 @@ import { Dosis } from 'next/font/google'
 const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
-  h2: 'Szeretnél egy rendezvényt tartani a Fuego-ban? ', 
-  p: 'Hívj minket vagy írj nekünk, ha rendezvényt szeretnél tartani nálunk! Bátran bízd ránk a szervezést, Ti pedig élvezzétek az élményt!',
+  h2: 'Szeretnél rendezvényt tartani a Fuego-ban?', 
+  p: 'Hívj minket vagy írj nekünk, ha rendezvényt tartanál nálunk!',
   btn:'kapcsolat',
   url: '/kapcsolat'
 }
 
 const textContentEn = {
   h2: 'Want to have an event at Fuego?', 
-  p: 'Call us or drop us a message if you would like to host an event with us. Feel free to entrust us with the organization, while you enjoy the experience to the fullest!',
+  p: 'Call or drop us a message if you would like to host an event!',
   btn:'Get in touch',
   url: '/en/contact'
 }
