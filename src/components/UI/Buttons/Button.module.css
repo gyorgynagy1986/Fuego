@@ -112,7 +112,7 @@
 }
 
 .differentTexMainColor::before {
-        content: 'Csatlakozom';
+        content: 'Jelentkezem';
         position: absolute;
         padding: 10px 20px;
         left: 0px;

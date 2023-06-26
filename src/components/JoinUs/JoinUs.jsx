@@ -8,7 +8,6 @@ import { useParallax } from 'react-scroll-parallax';
 
 const dosis = Dosis({ subsets: ['latin'] })
 
-
 const textContent = {
   h2: 'Dolgozz velünk!', 
   btn:'Jelentkezem',
@@ -32,12 +31,21 @@ const JoinUs = ({lang}) => {
 
   });
 
+  const btnLogic = !lang ? textContent.btn : textContentEn.btn;
+  const btnUrl = !lang ? textContent.url :textContentEn.url;
+  const h2Logic = !lang ? textContent.h2 : textContentEn.h2 ;
+
   return (
     <section ref={parallax.ref} className={style.container}>
       <div className={style.containerText}>
-          <h2 className={dosis.className}>{!lang ? textContent.h2 : textContentEn.h2 }</h2>
+          <h2 className={dosis.className}>{h2Logic}</h2>
             {!lang ? text : textEn}
-          <Button engColorPrefixJoin={lang ? true : false} differentTexMainColor={true} name={!lang ? textContent.btn : textContentEn.btn } url={!lang ? textContent.url :textContentEn.url} />
+          <Button 
+            engColorPrefixJoin={lang ? true : false}
+            differentTexMainColor={true}
+            name={btnLogic}
+            url={btnUrl}
+          />
         </div>
       </section>
   )
