@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import etlap from '../../../../public/assets/menu/1.png'
-import itallap from '../../../../public/assets/menu/2_eng.png'
+import etlap from '../../../../public/assets/menu/1.webp'
+import itallap from '../../../../public/assets/menu/2_eng.webp'
 import style from './page.module.css'
 import { Dosis } from 'next/font/google'
 
