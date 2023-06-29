@@ -13,11 +13,17 @@
 
 .containerTextleftReserved span {
     margin-left: 1rem;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
 .containerTextleft  {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
@@ -50,7 +56,6 @@
     line-height: 150%;
     /* or 21px */
     color: #FFF4E5;
-    margin-top: 21.5px;
     display: flex;
     gap: 1rem;
 }
@@ -74,7 +79,6 @@
     line-height: auto;
     color: var(--titleColor);
     text-decoration-line: underline;
-    margin-bottom: 2.5rem;
 }
 
 .containerTextleft a:hover {
@@ -86,6 +90,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 @media only screen and (max-width: 681px) {
