@@ -20,7 +20,7 @@ const textContentEn = {
   url:'/en/contact'
 }
 
-const text = <p className={style.h2}>Írj nekünk a <span>hola@fuegobp.hu</span> e-mail címre és küldd el önéletrajzod a pozíció megjelölésével. Amint tudunk, visszajelzünk!</p>
+const text = <p className={style.h2}>Írj nekünk az <span>hola@fuegobp.hu</span> e-mail címre és küldd el önéletrajzod a pozíció megjelölésével. Amint tudunk, visszajelzünk!</p>
 const textEn = <p className={style.h2}>Send us an e-mail to <span>hola@fuegobp.hu</span> with your CV and position you’d be interested in. We’ll get back to you as soon as possible!</p>
 
 const JoinUs = ({lang}) => {
