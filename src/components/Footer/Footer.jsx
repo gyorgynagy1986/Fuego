@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className={style.container}>
         <div className={style.containerTextleft}>
           <p className={style.containerTextleftCookieMobile} >Cookie policy</p>    
-            <Button url={'/'} underline={true} name={'GRUPO10'}/>
+            <Button url={'/'} underline={true} name={'GRUPO 10'}/>
             <div className={style.containerTextP}>
                 <p className={style.containerTextleftP}></p>
             </div>

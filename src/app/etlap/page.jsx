@@ -12,11 +12,11 @@ const dosis = Dosis({ subsets: ['latin'] })
 const Menu = () => {
 
   const handleClickFood = () => {
-    window.location.href = '/etlap.pdf';
+    window.open("/etlap.pdf", "_blank");
   };
 
   const handleClickDrinks = () => {
-    window.location.href = '/itallap.pdf';
+    window.open("/itallap.pdf", "_blank");
   };
 
   return (
