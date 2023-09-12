@@ -21,9 +21,9 @@ const textContentEn = {
 }
 
 
-const text = <p className={style.h2}>Írj nekünk az <a href="mailto:hola@lanubebp.hu" className={style.email}>hola@lanubebp.hu </a>
+const text = <p className={style.h2}>Írj nekünk az <a href="mailto:hola@fuegobp.hu" className={style.email}>hola@fuegobp.hu </a>
 e-mail címre és küldd el önéletrajzod a pozíció megjelölésével. Amint tudunk, visszajelzünk!</p>
-const textEn = <p className={style.h2}>Send us an e-mail to <a href="mailto:hola@lanubebp.hu" className={style.email}>hola@lanubebp.hu </a>
+const textEn = <p className={style.h2}>Send us an e-mail to <a href="mailto:hola@fuegobp.hu" className={style.email}>hola@fuegobp.hu </a>
 with your CV and position you’d be interested in. We’ll get back to you as soon as possible!</p>
 
 const JoinUs = ({lang}) => {
