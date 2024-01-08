@@ -12,16 +12,16 @@ const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
   h4: 'Rólunk',
-  p: 'Ha egy ínycsiklandó sült csirkére vagy sült kacsára vágysz, akkor megtaláltad az ideális helyet Kazinczy utcai éttermünkben. A Fuegoban a csirkét és a kacsát titkos recept alapján fűszerezzük, tetejükön ropogós és aranyszínű a bőr, ami szaftos és omlós hússal párosul.',
-  p1:'Fűszeres burgonyánk tökéletes kísérőül szolgál, íze és állaga harmonizál a sült hússal. Ne hagyd ki különleges, házi készítésű szószainkat sem! A hét minden napján a legjobb minőséggel és ízekkel várunk!',
+  p: 'Ha egy ínycsiklandó sült csirkére vagy kacsára vágysz, Kazinczy utcai éttermünk az ideális hely számodra. A Fuegoban a csirkét és a kacsát titkos recept alapján fűszerezzük, tetejükön ropogós és aranyszínű a bőr, ami szaftos és omlós hússal párosul.',
+  p1:'Fűszeres burgonyánk pedig tökéletes kísérőül szolgál, íze és állaga harmonizál a sült hússal, de hagyd ki friss salátáinkat és különleges, házi készítésű szószainkat sem. A hét minden napján kellemes hangulattal, a legjobb minőséggel és ízekkel várunk!',
   btn:'étlapunk',
   url:'/etlap'
 }
 
 const textContentEn = {
   h4: 'About us',
-  p: 'If you would try a mouth-watering grilled chicken or grilled duck, you have found the ideal place in our Kazinczy Street restaurant in the 7th district of Budapest. At Fuego, both the chicken and the duck are marinated according to a secret recipe, with crispy and golden skin on top, which is combined with tasty and crumbly meat.',
-  p1:'Our spicy potatoes serve as a perfect accompaniment, their taste and texture harmonize with the roast meat. Don\'t miss out our special homemade sauces either! We are waiting for you with the best quality and flavors every day of the week!',
+  p: 'If you’d try a mouth-watering roasted chicken or duck, our Kazinczy Street restaurant in the 7th district of Budapest is the ideal place for you. At Fuego, both the chicken and the duck are marinated according to a secret recipe, with crispy and golden skin on top, which is combined with tasty and crumbly meat.',
+  p1:'Our spicy potatoes serve as a perfect accompaniment, their taste and texture harmonize with the roast meat, but don’t miss out our fresh salads and our special homemade sauces either. We are waiting for you with a nice ambience and the best quality and flavors every day of the week!',
   btn:'Our menu',
   url:'/en/menu'
 }
