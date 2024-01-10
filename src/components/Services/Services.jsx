@@ -19,7 +19,7 @@ const textContent = {
 
   const textContentEn = {
     h2: 'Services ',
-    p: 'We are looking forward to your table reservation in our restaurant, whether it is for a corporate event or celebrating a special moment with your family or friends. We guarantee the delicious food and a great atmosphere!',
+    p: 'We are looking forward to your table reservation, whether it is for a corporate event or to celebrate a special moment with your family or friends. We ensure a delightful culinary experience and a great atmosphere!',
     p1:'Corporate events',
     p2: 'get-togethers',
     p3: 'birthday celebrations'
