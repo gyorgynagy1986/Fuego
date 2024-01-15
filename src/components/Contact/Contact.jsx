@@ -10,14 +10,14 @@ import mapPhoto from '../../../public/assets/sections/map_contact.jpg'
 const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
-    h2: 'Nyitvatartás',
-    btn:'asztalfoglalás',
-    btn2: 'kapcsolat',
-    url:'/kapcsolat'
+  h2: 'Nyitvatartás',
+  btn:'asztalfoglalás',
+  btn2: 'kapcsolat',
+  url:'/kapcsolat'
 }
 
 const textContentEn = {
-  h2: 'Openin Hours',
+  h2: 'Opening Hours',
   btn:'reservation',
   btn2: 'Get in Touch',
   url:'/en/contact'
@@ -29,9 +29,8 @@ const h3EngLogic = !lang ? textContent.h2 : textContentEn.h2;
 const btnNameLogic = !lang ? textContent.btn : textContentEn.btn;
 const btnNameLogic2 = !lang ? textContent.btn2 : textContentEn.btn2;
 
-
   return (
-    <section className={style.container}>
+    <section id="opening" className={style.container}>
         <div className={style.imageContainer}>
           <div className={style.layer}></div>
           <Image placeholder="blur" alt='Fuego' src={mapPhoto}/>
@@ -42,8 +41,16 @@ const btnNameLogic2 = !lang ? textContent.btn2 : textContentEn.btn2;
               <ContactItems lang={lang} />
             </div>
             <div className={style.btnContainer}>
-                <Button engColorPreReserv={lang ? true : false} url={reservation} name={btnNameLogic}/>
-                <ButtonGetInTouch url={!lang ? textContent.url :textContentEn.url} name={btnNameLogic2}/>
+                <Button 
+                  
+                  engColorPreReserv={lang ? true : false}
+                  url={reservation}
+                  name={btnNameLogic}
+                />
+                <ButtonGetInTouch
+                  url={!lang ? textContent.url :textContentEn.url}
+                  name={btnNameLogic2}
+                />
             </div>
         </div>
     </section>

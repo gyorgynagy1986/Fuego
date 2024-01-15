@@ -46,6 +46,7 @@
     letter-spacing: 0.02em;
     font-weight: 800;
     margin-bottom: 2rem;
+    white-space: nowrap;
 }
 
 .textContainer p {
@@ -107,6 +108,12 @@
 
 }
 
+@media only screen and (max-width: 843px) {
+    .textContainer h1 {
+       
+        white-space: unset;
+    }
+}
 
 @media only screen and (max-width: 681px) {
     .imageContainer {

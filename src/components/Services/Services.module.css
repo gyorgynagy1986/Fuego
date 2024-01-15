@@ -39,15 +39,15 @@
 
 .textContainer h2 {
     color: var(--titleColor);
-    font-size: 48px;
-    letter-spacing: 0.02em;
+    font-size: max(28px,min(8vw,48px));
+    line-height: max(35px,min(10vw,61px));
     line-height: 61px;
     font-weight: 800;
     margin-bottom: 2rem;
 }
 
 .textContainer p {
-    font-size: 20px;
+    font-size: max(16px,min(4vw,20px));
     line-height: 30px;
 }
 
@@ -123,7 +123,6 @@
 
     .textContainer h1 {
         font-weight: 800;
-        font-size: 28px;
         line-height: 35px;
     }
 
@@ -137,12 +136,11 @@
 
     .textContainer p {
         font-weight: 400;
-        font-size: 16px;
         line-height: 150%;
     }
 
     .ulContainer li {
-        font-size: 21px;
+        font-size: 20px;
     }
 
 

@@ -13,49 +13,49 @@ import photo5 from '../../../public/assets/gallery/covers/Gallery6.png'
 import photo6 from '../../../public/assets/gallery/covers/Gallery7.png'
 import photo7 from '../../../public/assets/gallery/covers/Gallery8.png'
 
-const photoGalleryCoverPhots = [
-  { 
-    id:1, 
+  const photoGalleryCoverPhots = [
+    { 
+      id:1, 
       alt:'fuego geléria cover photos',
       url:photo
-  },
-  { 
-    id:2, 
+    },
+    { 
+      id:2, 
       alt:'fuego geléria cover photos',
       url:photo1
-  },
-  { 
-    id:3, 
+    },
+    { 
+      id:3, 
       alt:'fuego geléria cover photos',
       url:photo2
-  },
-  { 
-    id:4, 
+    },
+    { 
+      id:4, 
       alt:'fuego geléria cover photos',
       url:photo3
-  },
-  { 
-    id:5, 
+    },
+    { 
+      id:5, 
       alt:'fuego geléria cover photos',
       url:photo4
-  },
-  { 
-    id:6, 
+    },
+    { 
+      id:6, 
       alt:'fuego geléria cover photos',
       url:photo5
-  },
-  { 
-    id:7, 
+    },
+    { 
+      id:7, 
       alt:'fuego geléria cover photos',
       url:photo6
-  },
-  { 
-    id:8, 
+    },
+    { 
+      id:8, 
       alt:'fuego geléria cover photos',
       url:photo7
-  },
- 
-]
+    },
+  
+  ]
 
   const CoverPhotoItems = ({ photoGalleryHandler }) => {
    

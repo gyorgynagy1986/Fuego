@@ -8,10 +8,9 @@ import { useParallax } from 'react-scroll-parallax';
 
 const dosis = Dosis({ subsets: ['latin'] })
 
-
 const textContent = {
   h2: 'Dolgozz velünk!', 
-  btn:'Csatlakozom',
+  btn:'Jelentkezem',
   url:'/kapcsolat'
 }
 
@@ -21,8 +20,9 @@ const textContentEn = {
   url:'/en/contact'
 }
 
-const text = <p className={style.h2}>Írj nekünk a return <span>hola@fuegobp.hu</span> e-mail címre és küldd el az önéletrajzod a pozíció megjelölésével! Amint lehetőségünk lesz rá, mielőbb válaszolni fogunk Neked!</p>
-const textEn = <p className={style.h2}>Drop us an e-mail to  <span>hola@fuegobp.hu</span> with your CV and position you’d be interested in! We’ll get back to you as soon as possible!</p>
+
+const text = <p className={style.h2}>Küldd el az önéletrajzod az  <a href="mailto:hola@fuegobp.hu" className={style.email}>hola@fuegobp.hu</a> e-mail címre a pozíció megjelölésével. Amint tudunk, visszajelzünk!</p>
+const textEn = <p className={style.h2}>Send your CV and the position you’d be interested in to <a href="mailto:hola@fuegobp.hu" className={style.email}>hola@fuegobp.hu</a>. We’ll get back to you as soon as possible!</p>
 
 const JoinUs = ({lang}) => {
 
@@ -32,12 +32,21 @@ const JoinUs = ({lang}) => {
 
   });
 
+  const btnLogic = !lang ? textContent.btn : textContentEn.btn;
+  const btnUrl = !lang ? textContent.url :textContentEn.url;
+  const h2Logic = !lang ? textContent.h2 : textContentEn.h2 ;
+
   return (
     <section ref={parallax.ref} className={style.container}>
       <div className={style.containerText}>
-          <h2 className={dosis.className}>{!lang ? textContent.h2 : textContentEn.h2 }</h2>
+          <h2 className={dosis.className}>{h2Logic}</h2>
             {!lang ? text : textEn}
-          <Button engColorPrefixJoin={lang ? true : false} differentTexMainColor={true} name={!lang ? textContent.btn : textContentEn.btn } url={!lang ? textContent.url :textContentEn.url} />
+          <Button 
+            engColorPrefixJoin={lang ? true : false}
+            differentTexMainColor={true}
+            name={btnLogic}
+            url={btnUrl}
+          />
         </div>
       </section>
   )

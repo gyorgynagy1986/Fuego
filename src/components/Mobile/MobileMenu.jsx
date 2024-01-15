@@ -13,10 +13,18 @@ import instagram from '../../../public/assets/social/instagram.svg'
 
 const textContentHu = {
   btnName:'asztalfoglalás',
+  btnNameWolt:'Rendelés',
+  reservation: 'https://reservours.com/fuego/tablereservation?s=website',
+  wolt:"https://wolt.com/en/hun/budapest/restaurant/fuego"
+
 }
 
 const textContentEng = {
-btnName:'reservation',
+  btnName:'reservation',
+  btnNameWolt:'Order',
+
+  reservation: 'https://reservours.com/fuego/tablereservation?s=website',
+  wolt:"https://wolt.com/en/hun/budapest/restaurant/fuego"
 }
 
 const MobileMenu = ({mobileClose}) => {
@@ -36,7 +44,10 @@ const MobileMenu = ({mobileClose}) => {
             <Link href='/'><Image src={facebook} /></Link>
             <Link href='/'><Image src={instagram} /></Link>
         </div>
-        <Button url={'/'} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName } />
+        <div className={style.mobileBtnContainer}>
+        <Button url={textContentHu.reservation} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName } />
+        <Button btnBlue={true} url={textContentHu.wolt} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnNameWolt : textContentHu.btnNameWolt } />
+        </div>
       </div>
     </div>
   </>

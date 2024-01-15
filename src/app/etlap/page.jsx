@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import etlap from '../../../public/assets/menu/1.png'
-import itallap from '../../../public/assets/menu/2.png'
+import etlap from '../../../public/assets/menu/1.webp'
+import itallap from '../../../public/assets/menu/2.webp'
 import style from './page.module.css'
 import { Dosis } from 'next/font/google'
 
@@ -12,11 +12,11 @@ const dosis = Dosis({ subsets: ['latin'] })
 const Menu = () => {
 
   const handleClickFood = () => {
-    window.location.href = '/etlap.pdf';
+    window.open("/etlap.pdf", "_blank");
   };
 
   const handleClickDrinks = () => {
-    window.location.href = '/itallap.pdf';
+    window.open("/itallap.pdf", "_blank");
   };
 
   return (
