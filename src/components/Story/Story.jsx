@@ -12,7 +12,7 @@ const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
   h4: 'Rólunk',
-  p: 'Ha egy ínycsiklandó sült csirkére vagy kacsára vágysz, Kazinczy utcai éttermünk a tökéletes választás számodra. A Fuego konyhájában a csirkét és a kacsát egyedi, titkos recept alapján fűszerezzük, a húsuk páratlanul szaftos és omlós, míg a tetejük aranyszínű és ropogós. Fűszeres burgonyánk tökéletes kísérőül szolgál, ízében és állagában is harmonizál a sült hússal, de ne hagyd ki friss salátáinkat és különleges, házi készítésű szószainkat sem.',
+  p: 'Ha egy ínycsiklandó sült csirkére vagy kacsára vágysz, Kazinczy utcai éttermünk a tökéletes választás számodra. A Fuego konyhájában a csirkét és a kacsát egyedi, titkos recept alapján fűszerezzük, így a hús páratlanul szaftos és omlós, míg a tetejük aranyszínű és ropogós. Fűszeres burgonyánk tökéletes kísérőül szolgál, ízében és állagában is harmonizál a sült hússal, de ne hagyd ki friss salátáinkat és különleges, házi készítésű szószainkat sem.',
   p1:'A hét minden napján kellemes hangulattal, a legjobb minőséggel és ízekkel várunk!',
   btn:'étlapunk',
   url:'/etlap'

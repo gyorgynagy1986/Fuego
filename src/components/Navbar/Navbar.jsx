@@ -28,7 +28,7 @@ const links = {
   facebook: "https://www.facebook.com/FUEGOchicken/?locale=hu_HU",
   instagram: "https://www.instagram.com/fuegobp/?hl=hu",
   reservation: "https://reservours.com/fuego/tablereservation?s=website",
-  wolt: "https://www.foodora.hu/restaurant/q0da/restaurante-fuego"
+  wolt: "https://wolt.com/en/hun/budapest/restaurant/fuego"
 };
 
 const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
