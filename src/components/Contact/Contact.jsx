@@ -42,6 +42,7 @@ const btnNameLogic2 = !lang ? textContent.btn2 : textContentEn.btn2;
             </div>
             <div className={style.btnContainer}>
                 <Button 
+                  
                   engColorPreReserv={lang ? true : false}
                   url={reservation}
                   name={btnNameLogic}

@@ -18,7 +18,8 @@ const textContent = {
   btn2: 'Contact' ,
   facebook: 'https://www.facebook.com/FUEGOchicken/?locale=hu_HU',
   instagram: 'https://www.instagram.com/fuegobp/?hl=hu',
-  reservation: 'https://reservours.com/fuego/tablereservation?s=website' 
+  reservation: 'https://reservours.com/fuego/tablereservation?s=website',
+  wolt:"https://wolt.com/en/hun/budapest/restaurant/fuego"
 }
 
 const Contact = () => {
@@ -47,7 +48,7 @@ const Contact = () => {
                 <ButtonGetInTouch url={textContent.instagram} name={'instagram'}/>
               </div>
                 <div className={style.btnContainerItem}>
-                  <Button url={textContent.reservation} name={textContent.btn}/>
+                  <Button btnHoverPrefix={true} url={textContent.reservation} name={textContent.btn}/>
                 </div>
           </div>
       </div>  

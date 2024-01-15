@@ -12,7 +12,7 @@ const dosis = Dosis({ subsets: ['latin'] })
 
 const textContent = {
   h4: 'Rólunk',
-  p: 'Ha egy ínycsiklandó sült csirkére vagy kacsára vágysz, Kazinczy utcai éttermünk a tökéletes választás számodra. A Fuego konyhájában a csirkét és a kacsát egyedi, titkos recept alapján fűszerezzük, így a hús páratlanul szaftos és omlós, míg a tetejük aranyszínű és különlegesen ropogós. Fűszeres burgonyánk tökéletes kísérőül szolgál, ízében és állagában is harmonizál a sült hússal, de ne hagyd ki friss salátáinkat és különleges, házi készítésű szószainkat sem.',
+  p: 'Ha egy ínycsiklandó sült csirkére vagy kacsára vágysz, Kazinczy utcai éttermünk a tökéletes választás számodra. A Fuego konyhájában a csirkét és a kacsát egyedi, titkos recept alapján fűszerezzük, a húsuk páratlanul szaftos és omlós, míg a tetejük aranyszínű és ropogós. Fűszeres burgonyánk tökéletes kísérőül szolgál, ízében és állagában is harmonizál a sült hússal, de ne hagyd ki friss salátáinkat és különleges, házi készítésű szószainkat sem.',
   p1:'A hét minden napján kellemes hangulattal, a legjobb minőséggel és ízekkel várunk!',
   btn:'étlapunk',
   url:'/etlap'
@@ -20,7 +20,7 @@ const textContent = {
 
 const textContentEn = {
   h4: 'About us',
-  p: "If you're in search of delicious roasted chicken or duck, our restaurant on Kazinczy Street in the 7th district is the perfect choice for you. At Fuego, the chicken and duck are marinated using a special, secret recipe, resulting in juicy and tender meat, crowned with a golden and crispy skin. Our spicy potatoes serve as an excellent companion, harmonizing in both flavor and texture with the roast meat. Make sure not to miss our fresh salads and unique homemade sauces, either.",
+  p: "If you're in search of a delicious roasted chicken or duck, our restaurant in the 7th district is the perfect choice for you. At Fuego, the chicken and duck are marinated using a special, secret recipe, resulting in juicy and tender meat, crowned with a golden and crispy skin. Our spicy potatoes serve as a perfect accompaniment, harmonizing in both flavor and texture with the roast meat. Make sure not to miss our fresh salads and unique homemade sauces, either.",
   p1:'Join us to enjoy a cozy ambience, with the finest quality and flavors, any day of the week!',
   btn:'Our menu',
   url:'/en/menu'

@@ -11,7 +11,7 @@ const bebas = Bebas_Neue({ subsets: ['latin'], weight:'400' })
 
 const textContent = {
     h2: 'Szolgáltatások ',
-    p: 'Örömmel várjuk asztalfoglalásod éttermünkben, ha céges rendezvényt szervezel, vagy megünnepelnél egy különleges pillanatot családoddal vagy barátaiddal. Mi biztosítjuk a finom ételeket és a jó hangulatot!',
+    p: 'Örömmel várjuk asztalfoglalásod, legyen az egy céges rendezvény, családi ünnep vagy baráti összejövetel. Mi biztosítjuk a finom ételeket és a jó hangulatot!',
     p1:'Céges rendezvények',
     p2: 'baráti összejövetelek',
     p3: 'születésnapok'

@@ -22,7 +22,7 @@ const textContent = {
 
 const textContentEn = {
   h1: 'Fuego Roasted Chicken Restaurant',
-  p: 'You are at the best place if you’d like to try a delicious roasted chicken or duck with spicy potatoes!',
+  p: 'You found the perfect spot if you’d like to try a delicious roasted chicken or duck with spicy potatoes!',
   btn:'Reservation',
   btn2: 'Get in touch',
   url: '/en/contact'
@@ -53,7 +53,7 @@ const Hero = ({reservation, lang}) => {
   }, []);
 
   return (
-    <header  ref={menuRef} className={style.container}>
+    <header ref={menuRef} className={style.container}>
         {stickyNav && <StickyNav />}
           <div  className={style.imageContainer}>
           <div className={style.layer}></div>

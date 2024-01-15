@@ -17,17 +17,18 @@ import LanguageLinks from "./LanguageLinks";
 import { usePathname } from "next/navigation";
 
 const textContentHu = {
-  btnName: "asztalfoglalás",
+  btnName: "Rendelés",
 };
 
 const textContentEng = {
-  btnName: "reservation",
+  btnName: "Order",
 };
 
 const links = {
   facebook: "https://www.facebook.com/FUEGOchicken/?locale=hu_HU",
   instagram: "https://www.instagram.com/fuegobp/?hl=hu",
   reservation: "https://reservours.com/fuego/tablereservation?s=website",
+  wolt: "https://www.foodora.hu/restaurant/q0da/restaurante-fuego"
 };
 
 const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
@@ -117,8 +118,9 @@ const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
 
           <div className={`${nav && style.btnNav}`}>
             <Button
-              btnHoverPrefix={btnHoverPrefix === "true" ? true : false}
-              url={links.reservation}
+              orderButton={true}
+              btnHoverPrefixOrder={btnHoverPrefix === "true" ? true : false}
+              url={links.wolt}
               name={btnEngLogic}
             />
           </div>

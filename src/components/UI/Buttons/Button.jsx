@@ -5,7 +5,7 @@ import {Bebas_Neue } from 'next/font/google'
 
 const bebas = Bebas_Neue({ subsets: ['latin'], weight: "400" })
 
-const Button = ({name, url, btnBlue, btnHoverPrefix, engColorPreReserv,  buttonContact, engColorPrefixJoin,  differentTexMainColor, engColorPrefix, engColorPrefixBlue, engColorPrefixBlueContact}) => {
+const Button = ({name, url, btnBlue, orderButton, btnHoverPrefixOrder,  btnHoverPrefix, engColorPreReserv,  buttonContact, engColorPrefixJoin,  differentTexMainColor, engColorPrefix, engColorPrefixBlue, engColorPrefixBlueContact}) => {
 
   return (
     <Link href={url}>
@@ -15,6 +15,8 @@ const Button = ({name, url, btnBlue, btnHoverPrefix, engColorPreReserv,  buttonC
            ${differentTexMainColor && style.differentTexMainColor}
            ${buttonContact && style.butnBlueContact}
            ${engColorPrefix && style.engColorPrefix}
+           ${orderButton && style.orderButton}
+           ${btnHoverPrefixOrder && style.btnHoverPrefixOrder}
            ${engColorPreReserv && style.engColorPreReserv}
            ${btnHoverPrefix && style.btnHoverPrefix}
            ${engColorPrefixJoin && style.engColorPrefixJoin}
