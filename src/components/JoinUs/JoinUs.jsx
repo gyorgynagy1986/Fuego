@@ -21,7 +21,7 @@ const textContentEn = {
 }
 
 
-const text = <p className={style.h2}>Küldd el az önéletrajzod az  <a href="mailto:hola@fuegobp.hu" className={style.email}>hola@fuegobp.hu</a> e-mail címre a pozíció megjelölésével. Amint tudunk, visszajelzünk!</p>
+const text = <p className={style.h2}>Küldd el az önéletrajzod az  <a href="mailto:hola@fuegobp.hu" className={style.email}>hola@fuegobp.hu</a> <span style={{whiteSpace:"nowrap"}}> e-mail</span> címre a pozíció megjelölésével. Amint tudunk, visszajelzünk!</p>
 const textEn = <p className={style.h2}>Send your CV and the position you’d be interested in to <a href="mailto:hola@fuegobp.hu" className={style.email}>hola@fuegobp.hu</a>. We’ll get back to you as soon as possible!</p>
 
 const JoinUs = ({lang}) => {
