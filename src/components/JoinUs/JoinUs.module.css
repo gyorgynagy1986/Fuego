@@ -59,6 +59,13 @@
   cursor: pointer;
 }
 
+.spanEmail {
+  color: inherit !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  cursor: unset !important;
+}
+
 .containerText p {
   font-weight: 400;
   font-size: 20px;
