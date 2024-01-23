@@ -20,7 +20,7 @@ const textContent = {
 
 const textContentEn = {
   h4: 'About us',
-  p: "If you're in search of a delicious roasted chicken or duck, our restaurant in the 7th district is the perfect choice for you. At Fuego, the chicken and duck are marinated using a special, secret recipe, resulting in juicy and tender meat, crowned with a golden and crispy skin. Our spicy potatoes serve as a perfect accompaniment, harmonizing in both flavor and texture with the roast meat. Make sure not to miss our fresh salads and unique homemade sauces, either.",
+  p: "If you're in search of a delicious roasted chicken or duck, our restaurant in the 7th district is the ideal place for you. At Fuego, the chicken and duck are marinated using a special, secret recipe, resulting in juicy and tender meat, crowned with a golden and crispy skin. Our spicy potatoes serve as a perfect accompaniment, harmonizing in both flavor and texture with the roast meat. Make sure not to miss our fresh salads and unique homemade sauces, either.",
   p1:'Join us to enjoy a cozy ambience, with the finest quality and flavors, any day of the week!',
   btn:'Our menu',
   url:'/en/menu'
